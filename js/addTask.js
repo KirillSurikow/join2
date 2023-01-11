@@ -3,7 +3,7 @@
  * 
  */
 async function initServer() {
-    setURL('https://gruppe-335.developerakademie.net/smallest_backend_ever');
+    setURL('https://kirill-surikow.developerakademie.net/smallest_backend_ever');
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
     allContactsSorted = JSON.parse(backend.getItem('allContactsSorted')) || [];

@@ -3,7 +3,7 @@
  * 
  */
 async function backendSignUp() {
-    setURL('https://gruppe-335.developerakademie.net/smallest_backend_ever');
+    setURL('https://kirill-surikow.developerakademie.net/smallest_backend_ever');
     await downloadFromServer();
     allUsers = JSON.parse(backend.getItem('users')) || [];
 }
@@ -20,7 +20,7 @@ async function addUser() {
     let password = document.getElementById('signUpPassword');
     allUsers.push({ name: name.value, email: email.value, password: password.value })
     await backendIntegrationSignUp();
-    window.location.href = 'https://gruppe-335.developerakademie.net/Join-1/index.html?msg=Du hast dich erfolgreich registriert';
+    window.location.href = 'https://kirill-surikow.developerakademie.net/Join-1/index.html?msg=Du hast dich erfolgreich registriert';
 }
 
 function confirmSignUp() {
