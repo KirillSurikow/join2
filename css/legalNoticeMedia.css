@@ -1,0 +1,209 @@
+@media (max-width:1800px){
+    .legalNoticeArrow{
+        left: 1600px;
+    }
+}
+
+@media (max-width:1700px){
+    .legalNoticeArrow{
+        left: 1500px;
+    }
+}
+
+@media (max-width:1600px){
+    .legalNoticeArrow{
+        left: 1400px;
+    }
+}
+
+@media (max-width:1500px){
+    .legalNoticeArrow{
+        left: 1300px;
+    }
+
+    .LegalNoticeHeadline{
+        left: 300px;
+    }
+
+    .subtitelLegalNotice{
+        left: 300px;
+    }
+}
+
+
+@media (max-width:1350px){
+
+    .LegalNoticeHeadline {
+        top: 100px;
+    }
+
+    .subtitelLegalNotice{
+        width: 800px;
+    }
+
+    .subTitelText{
+        width: 800px;
+    }
+
+    .legalNoticeArrow{
+        left: 1100px;
+    }
+}
+
+@media (max-width:1200px){
+
+    .bigContainerLegal{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .mainContainerLegal{
+        flex: 1;
+    }
+
+    .responsiveNavbar {
+        display: flex;
+        height: 84px;
+    }
+
+    .LegalNoticeHeadline {
+        top: 100px;
+        left: 100px;
+    }
+
+    .subtitelLegalNotice{
+        width: 800px;
+        left: 100px;
+    }
+
+    .subTitelText{
+        width: 800px;
+    }
+
+    .legalNoticeArrow{
+        left: 900px;
+    }
+}
+
+@media (max-width:950px){
+
+    .LegalNoticeHeadline {
+        top: 100px;
+        left: 100px;
+    }
+
+    .subtitelLegalNotice{
+        width: 500px;
+        left: 100px;
+    }
+
+    .subTitelText{
+        width: 500px;
+    }
+
+    .legalNoticeArrow{
+        left: 700px;
+    }
+}
+
+@media (max-width:750px){
+
+    .LegalNoticeHeadline {
+        top: 100px;
+        left: 100px;
+    }
+
+    .subtitelLegalNotice{
+        width: 400px;
+        left: 100px;
+    }
+
+    .subTitelText{
+        width: 400px;
+    }
+
+    .legalNoticeArrow{
+        left: 550px;
+    }
+}
+
+@media (max-width:600px){
+
+    .LegalNoticeHeadline {
+        top: 200px;
+        left: 100px;
+    }
+
+    .subtitelLegalNotice{
+        width: 300px;
+        left: 150px;
+        top: 350px;
+    }
+
+    .subTitelText{
+        width: 300px;
+    }
+
+    .legalNoticeArrow{
+        left: 450px;
+        
+    }
+}
+
+
+@media (max-width:500px){
+
+    .LegalNoticeHeadlineText{
+        font-size: 40px;
+    }
+
+    .LegalNoticeHeadline {
+        top: 200px;
+        left: 100px;
+        width: 300px;
+    }
+
+    .subtitelLegalNotice{
+        width: 300px;
+        left: 100px;
+        top: 350px;
+    }
+
+    .subTitelText{
+        width: 300px;
+    }
+
+    .legalNoticeArrow{
+        left: 350px;
+        
+    }
+}
+
+@media (max-width:400px){
+
+    .LegalNoticeHeadlineText{
+        font-size: 40px;
+    }
+
+    .LegalNoticeHeadline {
+        top: 155px;
+        left: 40px;
+        width: 250px;
+    }
+
+    .subtitelLegalNotice{
+        width: 250px;
+        left: 60px;
+        top: 275px;
+    }
+
+    .subTitelText{
+        width: 250px;
+    }
+
+    .legalNoticeArrow{
+        left: 280px;
+        
+    }
+}

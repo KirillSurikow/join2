@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/summary.css">
+    <link rel="stylesheet" href="css/summaryMedia.css">
+    <script src="js/script.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/summary.js"></script>
+    <script src="mini_backend.js"></script>
+    <script src="js/login.js"></script>
+    <title>Summary</title>
+
+
+</head>
+
+
+<body onload="init(1), downloadSummary()">
+    <div class="bigContainer">
+        <div class="orginalNavbar">
+
+            <div id="navline" class="navLine">
+                <img class="navbarJoinLogo" src="assets/img/Summary/joinLogoSummary.png">
+                <div class="navs">
+                    <div onclick="openSection('summary.html')" id="nav1" class="navbarSidebar">
+                        <img class="navImg opacity" src="assets/img/Summary/summary.png">
+                        <span> Summary</span>
+                    </div>
+
+                    <div onclick="openSection('board.html')" id="nav2" class="navbarSidebar">
+                        <img class="navImg" src="assets/img/Summary/board.png">
+                        <span> Board</span>
+                    </div>
+
+                    <div onclick="openSection('addTask.html')" id="nav3" class="navbarSidebar">
+                        <img class="navImg padding" src="assets/img/Summary/addTask.png">
+                        <span> Add Task</span>
+                    </div>
+
+                    <div onclick="openSection('contacts.html')" id="nav4" class="navbarSidebar">
+                        <img class="adjustImgNav" src="assets/img/Summary/contacts.png">
+                        <span> Contacts</span>
+                    </div>
+                </div>
+
+                <div onclick="openSection('legalNotice.html')" id="nav5" class="legalNotice">
+                    <img src="assets/img/Summary/exclamationMark.png">
+                    <span> Legal notice</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="headerPlusContent">
+            <div w3-include-html="templates/header.html"></div>
+            <div class="summaryContent">
+                <div class="subheaderResponsive">Kanban Project Management Tool</div>
+                <div class="summaryBoard" id="summaryBoard">
+                    <div class="headLineSummary">
+                        <h1>Summary</h1>
+                        <b class="blueLine"></b>
+                        <b>Everything in a nutshell!</b>
+                        <b class="blueLineResponsive "></b>
+                    </div>
+                    <div class="overviewPlusGreet">
+                        <div class="overview">
+                            <div class="summarysFirstLine ">
+                                <div class="summaryPosition" onclick="goToBoard()">
+                                    <span class="summaryNumbers" id="tasksTotal"></span>
+                                    <span>Tasks in Board</span>
+                                </div>
+                                <div class="summaryPosition" onclick="goToBoard()">
+                                    <span class="summaryNumbers" id="tasksProgress"></span>
+                                    <span>Tasks in Progress</span>
+                                </div>
+                                <div class="summaryPosition" onclick="goToBoard()">
+                                    <span class="summaryNumbers" id="tasksFeedback"></span>
+                                    <span>Awaiting Feedback</span>
+                                </div>
+                            </div>
+
+                            <div onclick="goToBoard()" class="summarysSecondLine">
+                                <div class="urgentTasks">
+                                    <img src="assets/img/Summary/urgentSummary.png">
+                                    <div class="urgentTaskCharacters">
+                                        <span class="summaryNumbers" id="tasksUrgent"></span>
+                                        <span>urgent</span>
+                                    </div>
+                                </div>
+                                <div class="greyLineSummary"></div>
+                                <div class="deadLine">
+                                    <span class="dueDateNumbers" id="nextDeadline"></span>
+                                    <span>Upcoming Deadline</span>
+                                </div>
+                            </div>
+                            <div class="summarysThirdLine" onclick="goToBoard()">
+                                <div onclick="goToBoard()" onmouseover="whitePenImg()" onmouseout="blackPenImg()"
+                                    class="summaryPositionThirdLine">
+                                    <img id="pen" src="assets/img/Summary/penSummary.png">
+                                    <div class="thirdLineCharacters">
+                                        <span class="summaryNumbers" id="tasksToDo"></span>
+                                        <span>To Do</span>
+                                    </div>
+                                </div>
+                                <div onclick="goToBoard()" onmouseover="whiteCheckImg()" onmouseout="blackCheckImg()"
+                                    class="summaryPositionThirdLine">
+                                    <img id="check" src="assets/img/Summary/checkSummary.png">
+                                    <div class="thirdLineCharacters">
+                                        <span class="summaryNumbers" id="tasksDone"></span>
+                                        <span>Done</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div id="greet" class="greet"></div>
+                        <div id="mobileGreet" class="d-none"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="responsiveNavbar">
+
+            <div id="navline" class="navLine">
+                <img class="navbarJoinLogo" src="assets/img/Summary/joinLogoSummary.png">
+                <div class="navs">
+                    <div onclick="openSection('summary.html')" id="nav1" class="navbarSidebar">
+                        <img class="navImg opacity" src="assets/img/Summary/summary.png">
+                        <span> Summary</span>
+                    </div>
+
+                    <div onclick="openSection('board.html')" id="nav2" class="navbarSidebar">
+                        <img class="navImg" src="assets/img/Summary/board.png">
+                        <span> Board</span>
+                    </div>
+
+                    <div onclick="openSection('addTask.html')" id="nav3" class="navbarSidebar">
+                        <img class="navImg padding" src="assets/img/Summary/addTask.png">
+                        <span> Add Task</span>
+                    </div>
+
+                    <div onclick="openSection('contacts.html')" id="nav4" class="navbarSidebar">
+                        <img class="adjustImgNav" src="assets/img/Summary/contacts.png">
+                        <span> Contacts</span>
+                    </div>
+                </div>
+
+                <div onclick="openSection('legalNotice.html')" id="nav5" class="legalNotice">
+                    <img src="assets/img/Summary/exclamationMark.png">
+                    <span> Legal notice</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+

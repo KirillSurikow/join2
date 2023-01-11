@@ -1,0 +1,1954 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(246, 247, 248);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* styling scrollbar */
+::-webkit-scrollbar-thumb {
+    background: rgba(167, 167, 167,0.6);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+  }
+
+
+.joinLogoLogIn {
+    position: absolute;
+    top: -54px;
+    left: -92px;
+    height: 250px;
+    width: auto;
+    transition: all 1s ease-in-out;
+}
+
+.joinLogoLogInLP{
+    height: 400px;
+    width: auto; 
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.joinLogoLogInLPResponsive{
+    height: 250px;
+    width: auto; 
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes logo{
+    from{
+        transform: translate(0,0) scale(1);
+    }
+
+    to{
+        transform: translate(-95vw,-100vh) scale(0.65);   
+        display: none;
+    }
+}
+
+@keyframes logoResponsive{
+    from{
+        transform: translate(0,0) scale(1);
+    }
+
+    to{
+        transform: translate(-95vw,-100vh) scale(0.8 );   
+        display: none;
+    }
+}
+
+.animationBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(246, 247, 248); 
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    opacity: 1;
+    animation-name: hide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes hide{
+    0%{
+        opacity: 1;
+        z-index: 1;
+    }
+
+    100%{
+        opacity: 0;
+        z-index: -2;
+    }
+}
+
+.LogIn {
+    position: absolute;
+    padding: 23px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 55%;
+    padding: 10px;
+    background-color: white;
+    width: 50vw;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+.underline {
+    background-color: #29ABE2;
+    height: 3px;
+    width: 123px;
+    margin-top: 15px;
+}
+
+
+h1 {
+    font-size: 61px;
+    margin-top: 80 !important;
+}
+
+
+.LogInHeadline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.signUpContainer {
+    position: absolute;
+    right: 11px;
+    top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+
+.signUpButton {
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+
+.signUpContainer span {
+    margin-right: 25px;
+    ;
+}
+
+
+.rememberMe {
+    display: flex;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+
+.rememberPassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+
+.rememberMe input {
+    margin-right: 7px;
+}
+
+
+.forgetPassword {
+    margin-left: 10px;
+}
+
+
+.logInButtons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.loginBtn {
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-right: 10px;
+    font-size: 19px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+
+.guestBtn {
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 19px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+
+.inputFields {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 17px;
+}
+
+
+.inputContainer {
+    width: 100%;
+    position: relative;
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.inputImageName {
+    position: absolute;
+    left: 78%;
+    top: 22%;
+    height: 18px;
+    width: auto;
+}
+
+.redText{
+    color: red;
+}
+
+
+.inputImageLock {
+    position: absolute;
+    left: 78%;
+    top: 22%;
+    height: 18px;
+    width: auto;
+}
+
+
+.inputImageMail {
+    position: absolute;
+    left: 78%;
+    top: 22%;
+    height: auto;
+    width: 16px;
+}
+
+
+.forgetPassword {
+    padding-left: 5px;
+}
+
+
+.forgetPassword a {
+    text-decoration: none;
+    color: #29ABE2;
+}
+
+
+/*Sign Up*/
+
+.signUp {
+    position: relative;
+    padding: 23px;
+    top: 22vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 45%;
+    background-color: white;
+    width: 50vw;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.inputField {
+    padding: 8px;
+    width: 71%;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.headerSignUp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+.backArrow {
+    height: 24px;
+    cursor: pointer;
+}
+
+
+/* forgot password */
+.headlineFP {
+    text-align: center;
+}
+
+
+.inputFieldFP {
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 5px;
+    width: 53%;
+}
+
+
+.inputImageMailFP {
+    position: absolute;
+    left: 73%;
+    top: 22%;
+    height: auto;
+    width: 16px;
+}
+
+
+.text {
+    text-align: center;
+    font-size: 21px;
+}
+
+.sendMailBtn {
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 19px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+.help {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.help :hover {
+    cursor: pointer;
+}
+
+.help img {
+    width: 16px;
+    height: auto;
+}
+
+
+
+.logOutBtn img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+.logOutBtn :hover {
+    cursor: pointer;
+}
+
+
+.logOutBtn button {
+    background-color: #2A3647;
+    color: white;
+    border-radius: 5px !important;
+    height: 30px !important;
+    width: 60px !important;
+}
+
+.subheaderResponsive{
+    display: none;
+    padding-left: 10%;
+}
+
+
+.header span {
+    margin-left: 5vw;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.headLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 455px;
+    top: 171px;
+}
+
+
+.headLine h1 {
+    font-weight: 700;
+    font-size: 61px;
+}
+
+
+.headLine b {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.navLine span::after {
+    box-sizing: unset !important;
+}
+
+.navLine span::before {
+    box-sizing: unset !important;
+}
+
+.inputFieldLogin {
+    padding: 8px;
+    width: 71%;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.grayHighlight {
+    background-color: #2A3647;
+}
+
+
+
+/* Von hier nach oben Fast alles für LogIn SignUp etc. */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+ 
+/* Add Task*/
+
+
+.alert {
+    width: 70%;
+    font-size: 14px;
+    color: red;
+}
+
+
+.alertPriority {
+    width: 70%;
+    font-size: 14px;
+    color: red;
+}
+
+
+.noSubtask {
+    width: 70%;
+    font-size: 14px;
+    color: red;
+}
+
+
+
+.mobileText {
+    display: none;
+    padding-right: 10px;
+}
+
+
+.headlineT {
+    margin-top: 0;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+
+.grayLineHorizontal {
+    background-color: #D1D1D1;
+    height: 1px;
+    min-width: 76%;
+    border: 1px solid #D1D1D1;
+}
+
+
+.selectField {
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    width: 66%;
+}
+
+
+.selectHeadField {
+    transform: translateX(-2%);
+    position: relative;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    border-radius: 6px;
+    color: #D1D1D1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 99%;
+    min-height: 15px;
+}
+
+.selectHeadFieldContacts {
+    position: relative;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    border-radius: 6px;
+    color: #D1D1D1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 95%;
+    min-height: 15px;
+}
+
+
+.selectHeadFieldPopUp {
+    transform: translateX(-2%);
+    position: relative;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    border-radius: 6px;
+    color: #D1D1D1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 99%;
+    min-height: 15px;
+}
+
+
+.hiddenInput {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.dropdownImgPopUp {
+    position: absolute;
+    height: 8px;
+    left: 93%;
+    top: 14px;
+}
+
+.chosenCategoryColorBoard {
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    position: absolute;
+    top: 16px;
+    left: 80%;
+}
+
+.clearBtnOriginal:hover {
+    cursor: pointer;
+}
+
+.inputWidth {
+    width: 70%;
+}
+
+
+.leftSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjustWidth5{
+    width: 100%;
+}
+
+.searchNavImg1{
+   height: 16px;
+   position: absolute;
+   top: 9px;
+   left: 96%;
+}
+
+.prioDoubleContainer {
+    position: relative;
+    width: 33%;
+}
+
+.prioDoubleContainerBBtn {
+    position: relative;
+    width: 26%;
+}
+
+.prioDoubleContainerOriginal {
+    position: relative;
+    width: 26%;
+}
+
+.prioDoubleContainerContacts {
+    position: relative;
+    width: 26%;
+}
+
+
+.prio:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.prioSelected:hover {
+    cursor: pointer;
+}
+
+.prioImg:nth-child(2) {
+    height: 8px;
+    width: 17px;
+}
+
+.subtaskHL {
+    margin-top: 20px;
+}
+
+.subtasksContact{
+    padding: 8px;
+    color: #D1D1D1;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.subtasksPopUp{
+    max-height: 75px;
+    width: 52%;
+    margin-left: 15px;
+}
+
+.subtasksSD{
+    padding: 8px;
+    width: 100%;
+}
+
+.subtaskListPopUp{
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.progressDisplay{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.progress{
+    width: 80%;
+    background-color:#F4F4F4 ;
+    height: 15px;
+}
+
+.progressbar{
+    background-color:#29ABE2;
+    height: 100%;
+}
+
+.progressDigits{
+    margin-left: 10px;
+}
+
+
+.subtasks:hover {
+    cursor: pointer;
+}
+
+
+.subtaskPlusOriginal:hover {
+    cursor: pointer;
+}
+
+
+.subtasksInputBoard {
+    padding: 8px;
+    color: #D1D1D1;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+.subtaskPlus {
+    position: absolute;
+    height: 18px;
+    width: auto;
+    left: 95%;
+    top: 24%;
+}
+
+
+.subtaskPlusContacts {
+    position: absolute;
+    left: 98%;
+    top: 67%;
+    height: 18px;
+    width: auto;
+}
+
+
+.subtaskPlusContacts {
+    cursor: pointer;
+}
+
+.subtaskPlusPopUp {
+    position: absolute;
+    left: 96%;
+    top: 24%;
+    height: 18px;
+    width: auto;
+}
+
+
+.leftSideP {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+.taskBtns {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+
+
+.clearBtnResponsive{
+    border: 1px solid #2A3647;
+    background-color: rgb(246, 247, 248);
+    color: #2A3647;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.clearBtnResponsiveAD{
+    border: 1px solid #2A3647;
+    background-color: rgb(246, 247, 248);
+    color: #2A3647;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.clearBtnResponsive2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2A3647;
+    background-color: rgb(246, 247, 248);
+    color: #2A3647;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.createTaskBtnResponsiveAD{
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 160px;
+}
+
+.workSpace p {
+    width: 70%;
+    text-align: left;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+
+.inputWidth2 {
+    width: 74%;
+}
+
+
+.inputWidth3 {
+    width: 100%;
+}
+
+.userImg {
+    margin-right: 5px;
+}
+
+
+.responsiveHeader {
+    position: relative;
+}
+
+
+.responsiveBtn {
+    position: absolute;
+    display: none;
+    justify-content: flex-end;
+    width: 70%;
+    left: 14vw;
+    top: 1px;
+    z-index: 1;
+    height: 34px;
+}
+
+
+.responsiveLogo {
+
+    height: 31px;
+    margin-top: 2px;
+    margin-left: 37px;
+    display: none;
+    z-index: 1;
+}
+
+
+
+
+/* Board oder AddTask ??????   Auf den erstn blick passiert beim entfernen nichts im board ?!?!??! //////////////////////////////*/
+
+.boardPopUp {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15px;
+    gap: 15px;
+}
+
+
+
+
+
+.searchAndCreate {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.addTaskBtn:hover{
+    cursor: pointer;
+}
+
+
+.searchField {
+    padding: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 5px;
+    height: 37px;
+    margin-top: 12px;
+}
+
+
+.searchField:hover {
+    cursor: pointer;
+}
+
+
+.dropLineToDo{
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    left: 1%;
+    
+}
+
+.dropLineIP{
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    left: 26%;
+    
+}
+
+.dropLineAW{
+    position: absolute;
+    width: 1%;
+    height: 100%;    
+    left: 51%;  
+}
+
+.dropLineD{
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    left: 76%;  
+}
+
+.inputContainerBoard {
+    width: 100%;
+    position: relative;
+    margin: 1.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.subtasksBPopUpContainer{
+    display: flex;
+    width: 100%;
+}
+
+.subtaskHeadlineBPopUp{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.subtasksSD{
+    line-height: 120%;
+}
+
+
+
+
+.categoryContainerS{
+    width: 72%;
+}
+
+
+.plusBoard {
+    height: 25px;
+}
+
+
+.plusBoard {
+    cursor: pointer;
+}
+
+
+.plusBoardAW {
+    height: 25px;
+}
+
+
+.plusBoardAW {
+    cursor: pointer;
+}
+
+.status span{
+    height: 100%;
+}
+
+/* Board                    Hier ist AssignedTo von AddTask mit drin */
+
+
+/* .boardPopUpCategory {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 36.5px;
+    gap: 10px;
+    width: 142px;
+    height: 40px;
+    background: #FC71FF;
+    color: white;
+    border-radius: 8px;
+} */
+
+.responsiveHeaderShowDetails{
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transform: translateX(-1.5%);
+    padding: 10px;
+    display: none;
+}
+
+
+
+.responsiveAddTaskBtn{
+    height: 50px;
+    display: none;
+}
+
+.responsiveAddTaskBtn:hover{
+    cursor: pointer;
+}
+
+
+.boardPopUpCategoryText {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+
+.boardPopUpDate {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    height: 25px;
+}
+
+
+.boardPopUpDateText {
+    width: 99px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 120%;
+}
+
+
+.boardPopUpDateNumbers {
+    width: 122px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 120%;
+}
+
+
+.boardPopUpTitel {
+    max-height: 140px;
+    word-break: break-word;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 120%;
+    width: 75%;
+}
+
+
+.boardPopUpDescrition {
+    max-height: 140px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 120%;
+    word-break: break-word;
+    width: 75%;
+}
+
+
+.boardPopUpPrio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+    width: 238px;
+    height: 33px;
+}
+
+
+.boardPopUpPrio img {
+    height: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+.boardPopUpPrioText {
+    width: 82px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 120%;
+}
+
+
+.boardPopUpAssignedTo {
+    width: 134px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 120%;
+}
+
+
+.boardPopUpPrioInside {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.urgentBackground {
+    background-color: #FF3D00;
+}
+
+
+.mediumBackground {
+    background-color: #FFA800;
+}
+
+
+.lowBackground {
+    background-color: #7AE229;
+}
+
+
+/* .task {
+    background-color: white;
+    box-sizing: border-box;
+    width: 93%;
+    padding: 15px;
+    margin-left: 5px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+} */
+
+
+.task:hover {
+    cursor: pointer;
+}
+
+
+.category {
+    background: orange;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: max-content;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 8px;
+    word-break: break-word;
+}
+
+.selectFieldsPopUp{
+    width: 103%;
+    transform: translateX(-2%);
+}
+
+
+.description {
+    color: #a8a8a8;
+    margin-bottom: 17px;
+    word-break: break-word;
+}
+
+
+.assignedAndPrio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.prioBoard {
+    max-width: 20px;
+    height: 12px;
+}
+
+
+
+.bigAssignedToContainerPopUp{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+ }
+
+.adjustWidth2{
+    width: 95%;
+}
+
+.checkBoxesC1{
+    position: relative;
+    top: -19px;
+    left: 94%;
+}
+
+.contactToAssignContainer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.contactToAssignContainer:hover{
+    background: #D1D1D1;
+    cursor: pointer;
+}
+
+.newCategory {
+    text-align: start;
+    padding-right: 8px;
+    width: 100%;
+}
+
+
+.newCategoryBoard {
+    text-align: start;
+    padding-right: 8px;
+    width: 100%;
+}
+
+
+.colorContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 10px;
+}
+
+
+.coloredCircle {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+}
+
+.navNewCategory {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 9px;
+    left: 86%;
+}
+
+
+.navNewCategoryBoard {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: 83%;
+}
+
+.checkedColor {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+x
+
+/* Board Pop Up                                       Nichts von AddTask mit drin*/
+
+
+.popUp {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(94, 80, 80, 0.3);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.initialsBoardCircle{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.initialsBoardLetter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 22px;
+    color: white;
+
+}
+
+
+.editContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.editAiignedTo {
+    margin: 10px;
+}
+
+
+.boardPopUpEditTitel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    height: 81px;
+    width: 80%;
+}
+
+
+.boardPopUpEditTitel input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 21px;
+    gap: 10px;
+    height: 51px;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.boardPopUpEditTitel input:hover {
+    cursor: pointer;
+}
+
+
+.boardPopUpEditDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    width: 80%;
+}
+
+
+.boardPopUpEditDescription textarea {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 18px 21px;
+    gap: 10px;
+    isolation: isolate;
+    height: 119px;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.boardPopUpEditDescription textarea:hover {
+    cursor: pointer;
+}
+
+
+.boardPopUpEditDueDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    height: 81px;
+    width: 80%;
+
+}
+
+
+.boardPopUpEditDueDate input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 21px;
+    gap: 10px;
+    isolation: isolate;
+    height: 51px;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.boardPopUpEditDueDate input:hover {
+    cursor: pointer;
+}
+
+
+.boardPopUpEditAllPrio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    width: 80%;
+    height: 91px;
+}
+
+
+.boardPopUpEditAllPrioRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    height: 61px;
+    width: 100%;
+}
+
+
+.boardPopUpEditAssignedTo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    width: 80%;
+}
+
+
+.popUpContent {
+    position: relative;
+    background-color: white;
+    height: 92%;
+    width: 80%;
+    padding-top: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+
+
+
+.closePopUp:hover {
+    cursor: pointer;
+}
+
+
+.assignedToPlusEditBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.popUpEditContent {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 90%;
+    width: 40%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+
+.subtaskContainerPopUp {
+    width: 80%;
+    max-height: 73px;
+    overflow-y: scroll;
+}
+
+.boardPopUpAssignedToContainer{
+    gap: 10px;
+    max-height: 75px;
+    width: 76%;
+}
+
+.assignedContact{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.assignedContactCircle{
+   position: relative;
+   height: 35px;
+   width: 35px;
+   border-radius: 35px;
+}
+
+.assignedContactLetters{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom:0;
+   margin: auto;
+   text-align: center;
+   color: white;
+   height: 20px;
+}
+
+.assignedContactsName{
+   display: flex;
+}
+
+
+.insidePopUpPencil {
+    height: 21px;
+}
+
+
+.submitEditBtn:hover {
+    cursor: pointer;
+}
+
+
+.popUpContentPencil {
+    /* position: absolute; */
+    top: 90%;
+    left: 84%;
+    width: 40px;
+}
+
+
+.popUpContentPencil {
+    cursor: pointer;
+}
+
+
+.popUpEditContentCross {
+    width: 21.65px;
+    height: 21.65px;
+    position: relative;
+    left: 46%;
+    top: 5px;
+}
+
+.assignedCircleEdit{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+}
+
+.assignedLettersEdit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 20px;
+}
+
+.removeAssignedContact{
+    height: 15px;
+    position: absolute;
+    left: 67%;
+    bottom: 67%;
+}
+
+.assignedToEditContainer{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 81%;
+}
+
+
+.popUpEditContentCross:hover {
+    cursor: pointer;
+}
+
+
+.popUpEditContentCross1 {
+    width: 21.65px;
+    height: 21.65px;
+    position: relative;
+    left: 95%;
+    top: -15px;
+}
+
+
+.popUpEditContentCross1:hover {
+    cursor: pointer;
+}
+
+
+.allPrioContainer {
+    display: flex;
+}
+
+
+.prioRework {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 35px !important;
+    width: 100%
+}
+
+
+.prioRework:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.prioReworkSelected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 35px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.subtaskCheckbox:hover {
+    cursor: pointer;
+}
+
+
+.headlinePrio {
+    font-size: 21px;
+}
+
+
+.prioDoubleContainerRework {
+    position: relative;
+    width: 30%;
+    margin: 5px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+
+.prioReworkInput {
+    opacity: 0;
+    width: 0 !important;
+}
+
+
+.confirmEditBtn {
+    position: absolute;
+    color: white;
+    background-color: #2A3647;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    left: 480px;
+    top: 720px;
+}
+
+
+.subtaskWithHookContainer {
+    display: flex;
+    width: 100%;
+}
+
+
+.whiteCheckHookContainer {
+    background-color: green;
+    height: 21px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+
+.whiteCheckHookInDetails {
+    height: 18px;
+}
+
+
+
+/* Navbar !!!!!!!!!!!!!            Nicht anfassen !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.navLine {
+    width: 15vw;
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100vh;
+    background-color: #2A3647;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: unset !important;
+    box-sizing: unset !important;
+    gap: 20px;
+    justify-content: unset !important;
+    box-sizing: unset !important;
+    font-family: 'Inter', sans-serif !important;
+    z-index: 2 !important;
+}
+
+
+.navbarJoinLogo {
+    height: 100px;
+    width: auto;
+    margin-left: 9%;
+}
+
+.navs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+
+.navbarSidebar {
+    color: #CDCDCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 55px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.navbarSidebar:hover {
+    cursor: pointer;
+}
+
+
+.navbarHighlight {
+    background-color: #091931;
+}
+
+
+.navbar :hover {
+    cursor: pointer;
+}
+
+.navImg {
+    width: 25px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+.opacity {
+    opacity: 0.8;
+}
+
+
+.adjustImgNav {
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+.padding {
+    padding-left: 4px;
+}
+
+
+.navbarSidebar span {
+    width: 110px;
+    font-size: 16px;
+}
+
+
+.legalNotice {
+    color: #CDCDCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 11vh;
+    width: 100%;
+    height: 55px;
+}
+
+
+.legalNotice:hover {
+    cursor: pointer;
+}
+
+
+.legalNotice img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.legalNotice span {
+    font-size: 16px;
+}
+
+.responsiveNavbar{
+    display: none;
+}

@@ -1,0 +1,146 @@
+.header {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 4px;
+    width: 85vw;
+}
+
+.userImgContacts{
+    display: flex;
+    
+}
+
+.imgQuestionmark {
+    height: 22px;
+}
+
+.help {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.helpContacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    gap: 15px;
+}
+
+.helpContacts:hover{
+    cursor: pointer;
+}
+
+
+.help :hover {
+    cursor: pointer;
+}
+
+.help img {
+    width: 16px;
+    height: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown img {
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2A3647;
+    color: white;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 20px 0px 20px 20px;
+    right: 0px;
+}
+
+.dropdown-content p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.logOutBtn {
+    margin-left: 10px;
+
+}
+
+
+.logOutBtn :hover {
+    cursor: pointer;
+}
+
+
+.logOutBtn button {
+    background-color: #2A3647;
+    color: white;
+    border-radius: 5px !important;
+    height: 30px !important;
+    width: 60px !important;
+}
+
+
+.header span {
+    margin-left: 5vw;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.dropdownHelp{
+    display: none;
+}
+
+
+.dropdownLegalNotice{
+    display: none;
+}
+
+
+@media(max-width:1200px){
+    
+    .header{
+        width: 100vw;
+    }
+    
+    .dropdownHelp{
+        display: unset;
+    }
+    
+    
+    .dropdownLegalNotice{
+        display: unset;
+    }
+
+    .SubHeaderContacts{
+        display: none;
+    }
+
+    .imgQuestionmark{
+        display: none;
+    }
+}

@@ -1,0 +1,405 @@
+/* contacts responsive */
+@media(max-width:1200px) and (max-height:610px) {
+    .contactsBoard {
+        overflow-x: hidden !important;
+    }
+
+}
+
+@media(max-width:400px) and (max-height:670px) {
+    .contactsBoard {
+        
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+
+    .backArrowContacts {
+        bottom: 128%;
+    }
+}
+
+@media(max-width:370px) and (max-height:750px) {
+    .contactsBoard {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+   
+
+    .backArrowContacts {
+        bottom: 128%;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .contactsContainer{
+        height: calc(100vh - 55px - 84px);
+    }
+
+    .contactsBoard {
+        width: 100%;
+        overflow-y: auto;
+        height: calc(100vh - 55px - 84px);
+    }
+
+    .responsiveContainer {
+        flex-direction: column;
+    }
+
+    .headerPlusContent {
+        width: 100vw !important;
+        flex: 1;
+    }
+
+    .responsiveSubHeadlineC{
+        display: flex;
+    }
+}
+
+
+@media (max-width : 1150px) {
+    .headLineContacts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+
+    .headLineContacts h1 {
+        margin-bottom: 0;
+    }
+
+    .blueLineContacts {
+        height: 0;
+        width: 100px;
+        align-self: flex-start;
+    }
+
+    .subHeadlineContacts {
+        width: 100%;
+    }
+
+    .prio{
+        padding: 9px;
+    }
+
+    .prioSelected{
+        padding: 9px;
+    }
+}
+
+@media(max-width : 1055px) {
+    .subHeadlineContacts {
+        font-size: 16px;
+    }
+}
+
+@media(max-width : 1050px) {
+
+
+    .leftSide {
+        padding-top: 10px;
+    }
+
+    .responsiveSubHeadlineAD {
+        display: flex;
+    }
+}
+
+@media(max-width:920px) {
+    .createAndCancelBtns {
+        flex-direction: column;
+        width: 86%;
+        align-items: center;
+    }
+
+    .taskBtns{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .clearBtnOriginal{
+        width: 158px;
+    }
+
+    .cancelNewContact {
+        width: 169px;
+    }
+}
+
+@media(max-width:880px) {
+    .addTaskContainer{
+        padding-top: 30px;
+    }
+    
+    .contactsContainer {
+        min-width: 100vw;
+    }
+
+    .initialsEdit {
+        width: 100%;
+    }
+
+    .contactsBoard {
+        display: none;
+    }
+
+    .backArrowContacts {
+        display: flex;
+    }
+   
+    .workSpace{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grayLine{
+        display: none;
+    }
+
+    .leftSide{
+        width: 95%;
+    }
+    
+    .rightSide{
+        padding-top: 0;
+        width: 95%;
+    }
+
+ 
+
+    .letterContainer {
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+
+    .editContactContainer {
+        transform: translate(0, 100vh);
+        height: 95vh;
+    }
+
+    .subtaskPlusContacts {
+        left: 90%;
+    }
+
+    .subtasksContact {
+        width: 95%;
+    }
+
+    .greyCrossContacts {
+        left: 92%;
+    }
+
+    .innerEditContactContainer {
+        flex-direction: column;
+    }
+
+    .headBoxEdit {
+        width: 100%;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+    }
+
+    .greyCrossEditContact {
+        display: none;
+    }
+
+    .whiteCrossEditContact {
+        display: flex;
+    }
+
+    .newContactBtnResponsive {
+        display: flex;
+    }
+
+    .newContactBtn {
+        display: none;
+    }
+
+    .inputEditContainer1 {
+        margin-top: 0;
+        width: 84%;
+        transform: translateX(-1.5%);
+    }
+
+    .allEditsContact {
+        width: 100%;
+        align-items: center;
+    }
+
+    .initialsEdit {
+        margin-top: -69px;
+        height: auto;
+    }
+
+    .adjustContentheadBoxEdit {
+        margin-top: 5%;
+
+    }
+}
+
+.addTaskToContact {
+    width: 90vw;
+}
+
+.createAndCancelBtns {
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
+@media(max-width:800px) {
+    .responsiveSubHeadline {
+        margin-top: 28px;
+        margin-bottom: 27px;
+        margin-left: 20%;
+    }
+}
+
+@media(max-width:660px){
+    .backArrowContacts{
+        bottom: 124%;
+    }
+}
+
+@media(max-width:500px) {
+    .addTaskToContact {
+        width: 100vw;
+        height: calc(100vh - 84px);
+        top: 0vh;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        border-radius: 0;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:450px) {
+    .createAndCancelBtns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:700px) {
+    .inputEditContainer1 {
+        width: 83%;
+    }
+}
+
+@media(max-width:660px) {
+    .detailedContactHead {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detailedContactData {
+        margin-top: 0;
+    }
+
+    .dcContactPlusAddTask {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .inputEditContainer1 {
+        width: 82%;
+    }
+}
+
+@media(max-width:550px) {
+    .inputEditContainer1 {
+        transform: translateX(-2.5) !important;
+    }
+
+    .editContactInformationBtn {
+        display: none;
+    }
+
+    .editContactInformationBtnResponsive {
+        display: flex;
+    }
+}
+
+@media(max-width:500px) {
+    .responsiveSubHeadline {
+        margin-left: 8%;
+    }
+
+    .categoryContainer {
+        width: 90%;
+    }
+}
+
+@media(max-width:490px) {
+    .detailedContactName {
+        font-size: 45px;
+    }
+}
+
+@media(max-width:465px) {
+    .detailedContactName {
+        font-size: 42px;
+    }
+}
+
+@media(max-width:465px) {
+    .detailedContactName {
+        font-size: 39px;
+    }
+}
+
+@media(max-width:407px) {
+    .detailedContactName {
+        font-size: 33px;
+    }
+}
+
+@media(max-width:355px) {
+    .detailedContactName {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:345px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .backArrowContacts {
+        bottom: 129%;
+        left: 70%;
+    }
+}
+
+@media(max-width:330px) {
+    .detailedContactName {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .inputEditContainer1 {
+        width: 81%;
+    }
+}
+
+@media (max-width:400px) {
+    .inputEditContainer1 {
+        width: 80%;
+    }
+}
+
+@media(max-width:350px) {
+    .createAndCancelBtns {
+        flex-direction: column;
+    }
+}

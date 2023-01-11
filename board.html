@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/addTask.js"></script>
+    <script src="js/renderBoard.js"></script>
+    <script src="js/addTaskStyle.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/boardStyle.js"></script>
+    <script src="mini_backend.js"></script>
+    <script src="js/renderBoard.js"></script>
+    <script src="js/renderAddTask.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/boardMedia.css">
+    <title>Board</title>
+</head>
+
+
+<body onload="init(2), downloadTasks()">
+
+    <div class="bigContainer">
+
+        <div class="orginalNavbar">
+
+            <div id="navline" class="navLine">
+                <img class="navbarJoinLogo" src="assets/img/Summary/joinLogoSummary.png">
+                <div class="navs">
+                    <div onclick="openSection('summary.html')" id="nav1" class="navbarSidebar">
+                        <img class="navImg opacity" src="assets/img/Summary/summary.png">
+                        <span> Summary</span>
+                    </div>
+
+                    <div onclick="openSection('board.html')" id="nav2" class="navbarSidebar">
+                        <img class="navImg" src="assets/img/Summary/board.png">
+                        <span> Board</span>
+                    </div>
+
+                    <div onclick="openSection('addTask.html')" id="nav3" class="navbarSidebar">
+                        <img class="navImg padding" src="assets/img/Summary/addTask.png">
+                        <span> Add Task</span>
+                    </div>
+
+                    <div onclick="openSection('contacts.html')" id="nav4" class="navbarSidebar">
+                        <img class="adjustImgNav" src="assets/img/Summary/contacts.png">
+                        <span> Contacts</span>
+                    </div>
+                </div>
+
+                <div onclick="openSection('legalNotice.html')" id="nav5" class="legalNotice">
+                    <img src="assets/img/Summary/exclamationMark.png">
+                    <span> Legal notice</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rightSideBoard">
+            <div w3-include-html="templates/header.html"></div>
+            <div class="contentBoard">
+                <div class="content">
+                    <div class="headArea">
+                        <div class="responsiveSubHeadline">
+                            Kanban Project Management Tool
+                        </div>
+                        <div class="normalHeadArea">
+                            <h1>Board</h1>
+                            <div class="inputPlusBtn">
+                                <div class="inputContainerBoard">
+                                    <input onkeyup="searchTask()" id="search" class="searchField" type="text"
+                                        placeholder="Find Task">
+                                    <div class="searchNav">
+                                        <div class="grayLineBoard"></div>
+                                        <img class="inputImageLoup" src="assets/img/Board/loup.png">
+                                    </div>
+                                </div>
+                                <button onclick="taskPopUpFromBoard()" class="addTaskBtn grayHighlight">
+                                    <span>Add Task</span>
+                                    <img class="btnImg" src="assets/img/Board/whiteCross.png">
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inputContainerBoardResponsive">
+                                <input onkeyup="searchTask()" id="search" class="searchField" type="text"
+                                    placeholder="Find Task">
+                                <div class="searchNavResponsive">
+                                    <div class="grayLineBoard"></div>
+                                    <img class="inputImageLoup" src="assets/img/Board/loup.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allTasks" id="allTasks">
+                        <div class="boardTaskContainer">
+                            <div class="status">
+                                <span>To do</span>
+                                <img onclick="taskPopUp('toDo')" class="plusBoard"
+                                    src="assets/img/Board/blackCorss.png">
+                            </div>
+
+                            <div class="statusContainer" id="toDo" ondrop="moveTo('toDo')" ondragover="allowDrop(event)"
+                                style="overflow-y:auto;">
+                            </div>
+                        </div>
+
+
+
+                        <div class="boardTaskContainer">
+                            <div class="status">
+                                <span>in progress</span>
+                                <img onclick="taskPopUp('inProgress')" class="plusBoard"
+                                    src="assets/img/Board/blackCorss.png">
+                            </div>
+                            <div class="statusContainer" id="inProgress" ondrop="moveTo('inProgress')"
+                                ondragover="allowDrop(event)" style="overflow-y:auto;"></div>
+                        </div>
+
+
+
+                        <div class="boardTaskContainer">
+                            <div class="status">
+                                <span>Awaiting Feedback</span>
+                                <img onclick="taskPopUp('awaitingFeedback')" class="plusBoardAW"
+                                    src="assets/img/Board/blackCorss.png">
+                            </div>
+
+                            <div class="statusContainer" id="awaitingFeedback" ondrop="moveTo('awaitingFeedback')"
+                                ondragover="allowDrop(event)" style="overflow-y:auto;"></div>
+
+                        </div>
+
+
+
+
+                        <div class="boardTaskContainer">
+                            <div class="status">
+                                <span>Done</span>
+                                <img onclick="taskPopUp('done')" class="plusBoard"
+                                    src="assets/img/Board/blackCorss.png">
+                            </div>
+                            <div class="statusContainer" id="done" ondrop="moveTo('done')" ondragover="allowDrop(event)"
+                                style="overflow-y:auto;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        
+        <div class="responsiveNavbar">
+
+            <div id="navline" class="navLine">
+                <img class="navbarJoinLogo" src="assets/img/Summary/joinLogoSummary.png">
+                <div class="navs">
+                    <div onclick="openSection('summary.html')" id="nav1" class="navbarSidebar">
+                        <img class="navImg opacity" src="assets/img/Summary/summary.png">
+                        <span> Summary</span>
+                    </div>
+
+                    <div onclick="openSection('board.html')" id="nav2" class="navbarSidebar">
+                        <img class="navImg" src="assets/img/Summary/board.png">
+                        <span> Board</span>
+                    </div>
+
+                    <div onclick="openSection('addTask.html')" id="nav3" class="navbarSidebar">
+                        <img class="navImg padding" src="assets/img/Summary/addTask.png">
+                        <span> Add Task</span>
+                    </div>
+
+                    <div onclick="openSection('contacts.html')" id="nav4" class="navbarSidebar">
+                        <img class="adjustImgNav" src="assets/img/Summary/contacts.png">
+                        <span> Contacts</span>
+                    </div>
+                </div>
+
+                <div onclick="openSection('legalNotice.html')" id="nav5" class="legalNotice">
+                    <img src="assets/img/Summary/exclamationMark.png">
+                    <span> Legal notice</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    
+
+
+  
+
+
+    <div class="popUp" id="popUp" style="display:none ;">
+        <div class="popUpContent" id="popUpContent">
+        </div>
+    </div>
+    <div class="popUp" id="popUpEditContainer" style="display:none ;">
+        <div class="popUpEditContent" id="popUpEditContent"></div>
+    </div>
+
+
+</body>
+
+</html>

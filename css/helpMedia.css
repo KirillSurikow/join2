@@ -1,0 +1,18 @@
+@media (max-width:1200px){
+
+    .bigContainerHelp{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:875px){
+    .helpMainContainer{
+        height: 90vh;
+    }
+
+    .howToUseMainContainer{
+        overflow-y: scroll;
+    }
+
+}

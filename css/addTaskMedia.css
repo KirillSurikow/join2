@@ -1,0 +1,247 @@
+/*Responsiveness Add task*/
+@media (max-width:1250px) {
+    .prio {
+        padding: 16px;
+    }
+}
+
+.prioSelected {
+    padding: 16px;
+}
+
+
+@media(max-width:1200px){   /*switching from normal layout to responsive layout*/
+    .bigContainer{
+        flex-direction: column;
+    }
+
+    .responsiveNavbar {
+    display: flex;
+    height: 84px;
+    }
+
+    .addTaskContainer{
+        height: calc(100vh - 55px - 88px) !important;
+        width: 100vw !important;
+    }
+
+    .responsiveSubHeadline{
+        display: flex !important;
+    }
+}
+
+@media(max-height:720px) and (max-width:1025px){  /*low height high width*/
+    .formular{
+        flex-direction: column;
+    }
+
+    .addTaskContainer{
+        overflow: auto;
+    }
+
+   .formular{
+    align-items: center !important;
+   }
+
+   .headlineT{
+    width: 100%;
+    text-align: center;
+   }
+
+   .leftSide{
+      width: 80% !important;
+   }
+
+   .rightSide{
+      width: 80% !important;
+   }
+
+   .grayLine{
+    display: none;
+}
+}
+
+@media(max-width:880px){ /*smartphone / tablet*/
+    .formular{
+        flex-direction: column;
+    }
+
+    .addTaskContainer{
+        overflow: auto;
+    }
+
+   .formular{
+    align-items: center !important;
+   }
+
+   .workSpace{      /*shifting the headline*/
+    align-items: center;
+   }
+
+   .headArea{
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+   }
+
+   .headlineT{
+    width: 100%;
+    margin: 0;
+    text-align: left;
+   }
+
+   .leftSide{
+      width: 80% !important;
+   }
+
+   .rightSide{
+      width: 80% !important;
+   }
+
+   .grayLine{
+    display: none;
+} 
+}
+
+@media (max-width:800px) {
+
+
+    
+/* 
+    .mobileText {
+        display: flex;
+    }
+
+    
+    .mobileText {
+        display: flex;
+        margin-top: 4vh;
+        width: 73%;
+    } */
+
+    
+    .clearBtn {
+        margin-bottom: 0;
+    }
+
+    .createTaskBtn {
+        width: 160px;
+    }
+
+    .leftSide {
+        width: 80%;
+    }
+
+    
+
+    .headerAndTaskContainer {
+        width: 100%;
+    }
+
+   
+    .inputWidth3 {
+        width: 96%;
+    }
+}
+
+@media(max-width:660px){  /*general structure at smartphone screen*/
+    .taskBtnsResponsive{
+        display: flex !important;
+    }
+
+    .taskBtnsOriginal{
+        display: none !important;
+    }
+
+    .workSpace{
+        width: 95% !important;
+    }
+
+    .leftSide{
+        width: 95% !important;
+    }
+
+    .rightSide{
+        width: 95% !important;
+    }
+
+    .headArea{
+        width: 95% !important;
+    }
+}
+
+
+@media (max-width:505px) {
+    .btnText{
+        display: none!important;
+    }
+
+    .createTaskBtn{
+        width: 67px !important;
+    }
+
+    /* .mobileText {
+        padding-right: 63px;
+    } */
+
+
+    /* .inputWidth {
+        width: 85%;
+    } */
+
+  
+
+    .inputWidth3 { /*linked with due date input*/ 
+        width: 97%;
+    }
+}
+
+@media(max-width:475px){  /*transfering the responsive add tasks btns more central*/
+    .taskBtnsResponsive{
+        right: 28% !important;
+    }
+}
+
+/* @media(max-width:460px){
+    .taskBtnsOriginal{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+} */
+
+
+@media(max-width:325px){ /*making space*/
+  .clearBtnOriginal{
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+}
+
+/* @media (max-width:1033px) {  
+    .prio {
+        padding: 8px;
+        min-width: 68px
+    }
+
+    .prioSelected {
+        padding: 8px;
+        min-width: 68px
+    }
+} */
+
+/* @media (max-width:1080px) {
+    .taskBtns {
+        flex-direction: column;
+        width: 169px;
+    }
+
+    .clearBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+} */

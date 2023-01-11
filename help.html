@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/helpMedia.css">
+    <link rel="stylesheet" href="css/legalNotice.css">
+    <link rel="stylesheet" href="css/legalNoticeMedia.css">
+    <script src="js/script.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/login.js"></script>
+    <title>Help</title>
+
+
+</head>
+
+
+<body onload="init()">
+    <div class="bigContainerHelp">
+
+        <div class="orginalNavbar">
+
+            <div id="navline" class="navLine">
+                <img class="navbarJoinLogo" src="assets/img/Summary/joinLogoSummary.png">
+                <div class="navs">
+                    <div onclick="openSection('summary.html')" id="nav1" class="navbarSidebar">
+                        <img class="navImg opacity" src="assets/img/Summary/summary.png">
+                        <span> Summary</span>
+                    </div>
+
+                    <div onclick="openSection('board.html')" id="nav2" class="navbarSidebar">
+                        <img class="navImg" src="assets/img/Summary/board.png">
+                        <span> Board</span>
+                    </div>
+
+                    <div onclick="openSection('addTask.html')" id="nav3" class="navbarSidebar">
+                        <img class="navImg padding" src="assets/img/Summary/addTask.png">
+                        <span> Add Task</span>
+                    </div>
+
+                    <div onclick="openSection('contacts.html')" id="nav4" class="navbarSidebar">
+                        <img class="adjustImgNav" src="assets/img/Summary/contacts.png">
+                        <span> Contacts</span>
+                    </div>
+                </div>
+
+                <div onclick="openSection('legalNotice.html')" id="nav5" class="legalNotice">
+                    <img src="assets/img/Summary/exclamationMark.png">
+                    <span> Legal notice</span>
+                </div>
+            </div>
+
+        </div>
+
+
+       
+      
+       
+           
+            
+
+           
+            <div class="helpMainContainer">
+                <div w3-include-html="templates/header.html"></div>
+                <div class="helpHeadline">
+                    <span class="helpHeadlineText">Help</span>
+                    <div onclick="returnTo()" class=""><img src="assets/img/Board/arrowLeft.png" ></div>
+                </div>
+                <div class="helpInfo">
+                    <span class="whatIsJoin">What is Join?</span>
+                    <span class="whatIsJoinInfoText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                        consequuntur iure veniam velit fugit quia quos molestias numquam, laboriosam cumque pariatur
+                        quam dolores quo maxime eius iusto vero ducimus amet!</span>
+                </div>
+               
+                <div class="howToUseMainContainer">
+                    <span class="howToUse">How to use it</span>
+                    <div class="helpStepOne">
+                        <span class="helpNumberOne">1.</span>
+                        <span class="helpNumberOneText">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Doloremque necessitatibus quod, voluptates quaerat magni optio corrupti cumque, expedita nam
+                            voluptatem suscipit debitis tenetur itaque illum consequatur commodi omnis laboriosam
+                            veritatis?</span>
+                    </div>
+                    <div class="helpStepTwo">
+                        <span class="helpNumberTwo">2.</span>
+                        <span class="helpNumberTwoText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            voluptatibus nesciunt accusantium, deserunt velit dolorem corrupti, veritatis quisquam quis
+                            iure tenetur quod. Repudiandae in, odit officiis dolore dignissimos dolores placeat?</span>
+                    </div>
+                    <div class="helpStepThree">
+                        <span class="helpNumberThree">3.</span>
+                        <span class="helpNumberThreeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            voluptatibus nesciunt accusantium, deserunt velit dolorem corrupti, veritatis quisquam quis
+                            iure tenetur quod. Repudiandae in, odit officiis dolore dignissimos dolores placeat?</span>
+                    </div>
+                </div>
+            </div>
+
+        
+
+
+        <div class="responsiveNavbar">
+
+            <div id="navline" class="navLine">
+                <img class="navbarJoinLogo" src="assets/img/Summary/joinLogoSummary.png">
+                <div class="navs">
+                    <div onclick="openSection('summary.html')" id="nav1" class="navbarSidebar">
+                        <img class="navImg opacity" src="assets/img/Summary/summary.png">
+                        <span> Summary</span>
+                    </div>
+
+                    <div onclick="openSection('board.html')" id="nav2" class="navbarSidebar">
+                        <img class="navImg" src="assets/img/Summary/board.png">
+                        <span> Board</span>
+                    </div>
+
+                    <div onclick="openSection('addTask.html')" id="nav3" class="navbarSidebar">
+                        <img class="navImg padding" src="assets/img/Summary/addTask.png">
+                        <span> Add Task</span>
+                    </div>
+
+                    <div onclick="openSection('contacts.html')" id="nav4" class="navbarSidebar">
+                        <img class="adjustImgNav" src="assets/img/Summary/contacts.png">
+                        <span> Contacts</span>
+                    </div>
+                </div>
+
+                <div onclick="openSection('legalNotice.html')" id="nav5" class="legalNotice">
+                    <img src="assets/img/Summary/exclamationMark.png">
+                    <span> Legal notice</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

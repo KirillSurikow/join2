@@ -1,0 +1,1413 @@
+/* Contacts */
+/* general structure */
+
+.responsiveContainer {
+    display: flex;
+    height: 100vh;
+}
+
+
+.contentPlusContacts {
+    display: flex;
+}
+
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.headLineContacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    height: 73px;
+}
+
+.headerPlusContent{
+    height: 73vh;
+}
+
+.blurBackground {
+    position: absolute;
+    top: 0;
+    background-color: rgba(120, 120, 120, 0.2);
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.addTaskToContact {
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 87vh;
+    width: 70vw;
+    transition: all 250ms ease-in-out;
+    transform: translateX(100vw);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editContactContainer {
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 60vh;
+    max-width: 1000px;
+    border-radius: 30px;
+    transition: all 250ms ease-in-out;
+    transform: translate(100vw,0);
+}
+
+.contactsContainer {
+    background-color: white;
+    min-width: 375px;
+    box-shadow: 4px 0px 4px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:calc(100vh - 55px);
+    overflow-x: hidden;
+}
+
+.newContactBackground {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(94, 80, 80, 0.3);
+    z-index: 1;
+}
+
+.contactsBoard {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+/* middle structure */
+
+
+/* head area */
+
+.backArrowContacts{
+    position: absolute;
+    bottom: 138%;
+    left: 76%;
+    display: none;
+}
+
+
+.headLineContacts h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.responsiveSubHeadlineC {
+    display: none;
+    font-size: 16px;
+}
+
+.blueLineContacts {
+    background-color: #29ABE2;
+    color: #29ABE2;
+    height: 59px;
+    width: 0;
+    border: 1px solid #29ABE2;
+}
+
+/* register area */
+
+.allPersons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 299px;
+    margin-top: 10px;
+}
+
+
+.innerAllPersonsContainer {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 285px;
+    border-radius: 10px;
+}
+
+
+.innerAllPersonsContainer:hover {
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+.choosenContact {
+    background-color: #2A3647;
+    color: white;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    overflow: hidden;
+    position: relative;
+}
+
+.letterContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.letterContainer p {
+    width: 76%;
+    margin-left: 23px;
+    font-size: 21px;
+}
+
+
+
+
+/* edit contact */
+
+.innerEditContactContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.greyCrossEditContact {
+    position: absolute;
+    height: 25px;
+    top: 17px;
+    right: 33px;
+}
+
+.whiteCrossEditContact{
+    position: absolute;
+    height: 25px;
+    top: 17px;
+    right: 33px;
+    display: none;
+}
+
+
+.greyCrossEditContact:hover {
+    cursor: pointer;
+}
+
+
+.headBoxEdit {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #2A3647;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.adjustContentheadBoxEdit {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%
+}
+
+.editContactsLogo {
+    height: auto;
+    width: 54px;
+}
+
+
+.headlineEditC {
+    color: white;
+    font-size: 61px;
+}
+
+
+.blueUnderlineEC {
+    height: 3px;
+    background-color: #29ABE2;
+    width: 30%;
+}
+
+.initialsEdit {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initialsCirle {
+    font-size: 47px;
+    background-color: yellow;
+    color: white;
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.initialsLetters {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 55px;
+}
+
+.allEditsContact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33%;
+    gap: 25px;
+}
+
+.createAndCancelBtns {
+    display: flex;
+}
+
+
+.inputEditContainer {
+    position: relative;
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inputEditContainer1 {
+    position: relative;
+    width: 80%;
+    margin-top: 62px;
+}
+
+.imgEditContact {
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    width: 15px;
+}
+
+
+.imgEditContact1 {
+    position: absolute;
+    right: -6px;
+    top: 7px;
+    height: 17px;
+}
+
+
+.inputfieldEditContact {
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.inputfieldEditContact:hover {
+    cursor: pointer;
+}
+
+.incorrectName {
+    font-size: 14px;
+    color: red;
+}
+
+.saveEditContactBtn {
+    background-color: #2A3647;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    height: 30px;
+}
+
+.saveEditContactBtn {
+    cursor: pointer;
+}
+
+
+/* new Contact Pop Up */
+
+.closePopUp {
+    position: absolute;
+    top: 10px;
+    left: 96%;
+    height: 25px;
+    z-index: 2;
+} 
+
+
+.subHeadlineCreate {
+    color: white;
+}
+
+
+.newContactInterfaceImg {
+    height: 120px;
+}
+
+.createAndCancelBtns {
+    gap: 10px;
+    transform: translateX(-10px);
+}
+
+.cancelNewContact {
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid #2A3647;
+    font-size: 21px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cancelNewContact {
+    cursor: pointer;
+}
+
+.whiteCheckHookSmall {
+    height: 19px;
+}
+
+
+.greyCrossSmall {
+    height: 19px;
+}
+
+.newContactBlueLine {
+    background-color: #29ABE2;
+    color: #29ABE2;
+    height: 0px;
+    width: 60px;
+    border: 1px solid #29ABE2;
+}
+
+
+.newContactLeft img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.newContactRight img {
+    height: 80px;
+    width: 80px;
+}
+
+
+.newContactInputContainer input {
+    margin: 10px;
+}
+
+
+.newContactInputContainer button {
+    margin: 10px;
+}
+
+
+.newContactBtn {
+    position: absolute;
+    top: 80vh;
+    right: 10vw;
+    display: flex;
+    align-items: center;
+    background-color: #2A3647;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.newContactBtnResponsive {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    background-color: #2A3647;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: none;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.newContactBtnResponsive:hover {
+    cursor: pointer;
+}
+
+
+.newContactBtn:hover {
+    cursor: pointer;
+}
+
+
+.newContactImg {
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .contentContainerContacts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    width: 70vw;
+} */
+
+/* detailed Contacts */
+
+.contactInitialsCircle {
+    height: 42px;
+    width: 42px;
+    border-radius: 42px;
+    color: white;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 7px;
+}
+
+
+.contactInitialsLetters {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    height: 22px;
+}
+
+.detailedContact{
+    flex-direction: column;
+}
+
+
+.detailedContactHead {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.dcContactPlusAddTask {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    width: 66%;
+    height: 106px;
+}
+
+.addTaskToContactBtn{
+    position: absolute;
+    top: 65px;
+}
+
+
+.dcInitialsCircle {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+}
+
+
+.dcInitialsLetter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 47px;
+    height: 63px
+}
+
+
+.greyCross {
+    height: 20px;
+    top: 16px;
+    left: 95%;
+}
+
+
+.greyCrossContacts {
+    position: absolute;
+    height: 20px;
+    top: 0px;
+    left: 95%;
+}
+
+
+.greyCrossContacts:hover {
+    cursor: pointer;
+}
+
+
+.detailedContactName {
+    position: absolute;
+    font-size: 47px;
+    font-weight: 500;
+    width: max-content;
+}
+
+
+.addTaskToContactLetters {
+    font-size: 16px;
+    color: #29ABE2;
+}
+
+
+.addTaskToContactLetters {
+    cursor: pointer;
+}
+
+
+.addTaskToContactImg {
+    height: 15px;
+}
+
+
+.addTaskToContactImg:hover {
+    cursor: pointer;
+}
+
+
+.detailedContactEditContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+.contactInformation {
+    font-size: 21px;
+}
+
+
+.editContactInformationBtn:hover {
+    cursor: pointer;
+}
+
+.editContactInformationBtnResponsive:hover{
+    cursor: pointer;
+}
+
+.editContactInformationBtnResponsive{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 5%;
+    left: 71%;
+    display: none;
+}
+
+
+.editContact {
+    font-size: 16px;
+}
+
+
+.bluePen {
+    height: 25px;
+}
+
+
+.detailedContactData {
+    margin-top: 40px;
+}
+
+
+.contactCategory {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+.contactName {
+    font-size: 21px;
+    position: absolute;
+    width: max-content;
+}
+
+
+.contactMail {
+    font-size: 16px;
+    color: #007CEE;
+    position: absolute;
+    top: 25px;
+}
+
+.showFullName {
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+      right: -80%;
+    }
+ 
+    
+    75% {
+      right: 75%;
+    }
+  }
+
+
+.contactPhone {
+    font-size: 16px;
+}
+
+.d-none{
+    display: none;
+}
+
+/* adjust add task to contact */
+
+.headArea{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.taskBtnsResponsiveContacts {
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 2%;
+}
+
+.addTaskContainerPopUp {
+    display: flex;
+    width: 95%;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.workSpace {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.d-none{
+    display: none;
+}
+
+.closePopUp{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    height: 20px;
+}
+
+.headerPlusResponsiveBtn{
+    display: none;
+}
+
+
+
+.workSpace {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.formular{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4.9%;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.grayLine {
+    background-color: #D1D1D1;
+    height: 100%;
+    width: 0;
+    border: 1px solid #D1D1D1;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.upperRightside{
+    width: 100%;
+}
+
+.formularSection{
+    width: 100%;
+    align-items: flex-start ;
+}
+
+.inputField {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.textareaField {
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/**/
+.categoryContainer {  /*parent*/
+    width: 100%;
+}
+
+.categoryContainer:hover {
+    cursor: pointer;
+}
+
+/*before Dropdown*/
+.selectHeadFieldOriginal {
+    position: relative;
+    background-color: white;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 6px;
+    color: #D1D1D1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 15px;
+}
+
+.colorChoice {
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+}
+
+.dropdownImg {
+    position: absolute;
+    height: 8px;
+    left: 93%;
+    top: 13px;
+}
+
+.selectOption {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+    border-left: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.selectOption:hover {
+    background: #D1D1D1;
+    cursor: pointer;
+}
+
+
+.selectOption:last-child {
+    border-bottom: 1px solid #D1D1D1;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.selectOptionColor {
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+}
+
+.sales {
+    background-color: #E200BE;
+}
+
+
+.backoffice {
+    background-color: #1fd7c1;
+}
+
+/*after dropdown*/
+.newCategoryContainer {  /*parent for dropdown*/
+    position: relative;
+}
+
+.newCategoryOriginal {
+    text-align: start;
+    padding-right: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newCategorySignature {
+    position: relative;
+}
+
+.chosenCategoryColor {
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    position: absolute;
+    top: 12px;
+    left: 83%;
+}
+
+.navNewCategoryOriginal {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    left: 88%;
+}
+
+.crossNewCategory {
+    height: 21px;
+}
+
+.greyLineNewCategory {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(126, 125, 125, 0.8);
+}
+
+.checkNewCategory {
+    height: 21px;
+}
+
+.colorContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.coloredCircle {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+}
+
+.categoryColor {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    top: 11px;
+    left: 83%;
+    display: none;
+}
+
+.lightblue {
+    background-color: #8AA4FF;
+}
+
+
+.red {
+    background-color: #FF0000;
+}
+
+
+.green {
+    background-color: #2AD300;
+}
+
+
+.purple {
+    background-color: #E200BE;
+}
+
+
+.orange {
+    background-color: #FF8A00;
+}
+
+
+.blue {
+    background-color: #0038FF;
+}
+
+
+
+/* drop down End category section end*/
+/*Assigned To */
+.bigAssignedToContainer{ /*parent*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ /* before dropdown */
+ .assignedToContainer {
+    width: 100%;
+    display: flex;
+}
+
+.adjustWidth{
+    width: 100%;
+}
+
+.selectOptionC{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    background-color: white;
+    border-left: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+    padding: 8px;
+}
+
+.selectOptionC:hover {
+    background: #D1D1D1;
+    cursor: pointer;
+}
+
+.selectOptionC:last-child {
+    border-bottom: 1px solid #D1D1D1;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.checkBoxesC{
+    position: relative;
+    top: -9px;
+    right: 19px;
+}
+
+.checkBoxC{
+    height: 16px;
+    position: absolute;
+}
+
+.allContactsToAssign{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    background-color: white;
+    border-left: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+    padding: 8px; 
+    height: 43px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.assignedContacts{
+    width: 74%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inviteImg{
+    height: 22px;
+}
+
+/* render assigned contacts */
+
+.assignToCirle{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(36, 36, 222);
+    position: relative;
+    border-radius: 40px; 
+}
+
+.assignToLetters{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    text-align: center;
+    height: 17px;
+}
+
+.removeContactCross{
+    position: absolute;
+    height: 16px;
+    top: -8px;
+    left: 30px;
+}
+
+
+/* after dropdown */
+
+.searchContactContainer{
+    position: relative;
+    width: 100%;
+}
+
+.searchFieldAssignTo{
+    padding: 8px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/* other classes */
+
+.inputField:hover {
+    cursor: pointer;
+}
+
+.inputWidth3 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* priority */
+
+.prioBox {   /*parent*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 34px;
+    height: 33px;
+    gap: 5px;
+}
+
+.prioDoubleContainerOriginal {
+    position: relative;
+    width: 26%;
+}
+
+.prio {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.prioImg {
+    height: 12px;
+    margin-left: 4px;
+}
+
+.prioInput {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+
+.prioSelected {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.orange {
+    background-color: #FF3D00;
+}
+
+
+.yellow {
+    background-color: #FFA800;
+}
+
+
+.green {
+    background-color: #7AE229;
+}
+
+.d-none {
+    display: none;
+}
+
+/* subtasks */
+
+.subtaskContainer { /*parent*/
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 23px;
+    width: 100%;
+}
+
+.subtasks {
+    padding: 8px;
+    color: #D1D1D1;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.subtaskPlusOriginal {
+    position: absolute;
+    left: 94%;
+    top: 69%;
+    height: 18px;
+    width: auto;
+}
+
+.subtaskList {
+    width: 100%;
+    max-height: 80px;
+    margin-bottom: 5px;
+}
+
+
+.subtask {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.deleteSubtaskBtn {
+    height: 20px;
+}
+
+/* create and clear Btn */
+
+.taskBtnsOriginal{ /*parent*/
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+}
+
+.headerPlusResponsiveBtn{
+    position: relative;
+}
+
+.clearBtnOriginal {
+    border: 1px solid #2A3647;
+    background-color: rgb(246, 247, 248);
+    color: #2A3647;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btnImg2 {
+    height: 11px;
+    margin-left: 3px;
+}
+
+.createTaskBtn {
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 160px;
+}
+
+.grayHighlight {
+    background-color: #2A3647;
+}
+
+/*header pop up for smartphone*/
+
+.responsiveHeaderPopUp{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 10%);
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.responsiveLogoPopUp{
+    height: 42px;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+.taskBtnsResponsive {
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 2%;
+}
+
+.clearBtnResponsive{
+    border: 1px solid #2A3647;
+    background-color: rgb(246, 247, 248);
+    color: #2A3647;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.createTaskBtnResponsive{
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearBtnResponsive2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2A3647;
+    background-color: rgb(246, 247, 248);
+    color: #2A3647;
+    border-radius: 5px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

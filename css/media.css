@@ -1,0 +1,570 @@
+/*responsiveness for Log In*/
+@media (max-width:660px) {
+    .signUpContainer {
+        top: 90vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 235px;
+    }
+
+    .signUpButton {
+        width: 110px;
+        height: 45px;
+    }
+
+    .loginBtn {
+        margin-bottom: 20px;
+        width: 133px;
+        margin-right: 0;
+    }
+
+
+    .rememberPassword {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .inputImageName {
+        left: 77%;
+    }
+
+    .inputImageLock {
+        left: 77%;
+    }
+
+    .inputImageMail {
+        left: 77%;
+    }
+
+    .logInButtons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 19px;
+    }
+
+    .LogIn {
+        height: 65%;
+    }
+
+
+
+    .guestBtn {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:600px) {
+
+    .joinLogoLogIn {
+        height: 200px;
+    }
+}
+
+@media(max-width:430px) {
+
+    h1 {
+        font-size: 48px;
+        ;
+    }
+
+    .LogIn {
+        width: 70vw;
+    }
+
+}
+
+@media(max-width:400px) {
+
+
+    .signUpContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signUpContainer span {
+        margin-right: 0;
+        margin-bottom: 4px;
+    }
+}
+
+/*Responsiveness for Sign Up*/
+
+@media(max-width:430px) {
+
+
+    .signUp {
+        width: 70vw;
+    }
+
+}
+
+@media(max-width:330px) {
+    .headlineSU {
+        font-size: 43px;
+    }
+}
+
+/* Responsiveness for forget password */
+
+@media(max-width:830px) {
+    .inputFieldFP {
+        width: 80%;
+    }
+
+    .inputImageMailFP {
+        left: 83%;
+    }
+}
+
+@media(max-width:600px) {
+    .signUp {
+        top: 17vh;
+        width: 70vw;
+    }
+}
+
+@media(max-width:350px) {
+    .headlineFP {
+        font-size: 43px;
+    }
+}
+
+@media(max-width:320px) {
+    .sendMailBtn {
+        font-size: 16px;
+    }
+}
+
+
+
+/* NavBar !!!!!!!!!!!! */
+@media(max-width:820px) and(max-height:1180px){
+    .navLine{
+        height: 74px !important;
+    }
+
+    .summaryContent {
+        height: calc(100vh - 55px - 74px);
+    } 
+}
+
+@media (max-width:1200px) {
+
+    .navLine {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 84px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .navbarSidebar {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        height: 100%;
+    }
+
+    .navbarSidebar span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navs {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .adjustImgNav {
+        margin-left: 0;
+    }
+
+    .responsiveLogo {
+        display: flex;
+    }
+
+    .navbarJoinLogo {
+        display: none;
+    }
+
+    .navLine .navImg {
+        margin-left: 0;
+    }
+
+    .responsiveNavbar {
+        display: flex;
+        height: 84px;
+    }
+
+    .orginalNavbar {
+        display: none;
+    }
+
+
+};
+
+
+
+
+
+
+
+/* Navbar in Contacts ?!?!?!?!?!?!?!?!? */
+
+
+
+@media (max-width:1200px) {
+    .contactsContainer {
+        height: 85vh;
+    }
+
+    .contactsBoard {
+        height: 85vh;
+    }
+
+    .responsiveSubHeadline {
+        display: flex;
+    }
+
+    .responsiveSubHeadlineC {
+        display: flex;
+    }
+
+    .responsiveSubHeadlineB {
+        display: flex;
+    }
+
+    .SubHeaderContacts {
+        display: none;
+    }
+
+
+}
+
+
+
+/* responsive Board */
+
+@media(max-width:1200px) {
+    .popUpEditContent {
+        width: 100% !important;
+        height: 100vh !important;
+        border-radius: 0 !important;
+        background-color: #F5F5F5 !important;
+    }
+
+    .subheaderResponsive{
+        display: flex;
+    }
+
+    .SubHeaderContacts{
+        display: none;
+    }
+
+    .responsiveHeaderShowDetails {
+        display: flex;
+    }
+
+    .subtasksPopUp {
+        width: 66%;
+    }
+
+    .popUpContentPencil {
+        top: 80% !important;
+    }
+
+    .boardPopUpTitel {
+        font-size: 36px;
+    }
+
+    .popUpEditContentArrow {
+        display: flex !important;
+    }
+
+    .popUpEditContentCross {
+        display: none;
+    }
+
+    .popUpEditContentCross1 {
+        display: none;
+    }
+}
+
+
+
+@media(max-width:1055px) {
+    .bigAssignedToContainerPopUp {
+        transform: translateX(1%);
+    }
+
+    .selectFieldsPopUp {
+        width: 104%;
+    }
+}
+
+
+
+@media(max-width:880px) {
+    .bigAssignedToContainerPopUp {
+        width: 77%;
+    }
+
+    .selectFieldsPopUp {
+        width: 105%;
+    }
+
+    .subheaderResponsive{
+        padding-left: 17%;
+    }
+
+    
+}
+
+@media(max-width:825px) {
+    .allTasks span {
+        font-size: 17px !important;
+    }
+}
+
+@media(max-width:800px) {
+   
+
+    .popUpEditContent {
+        height: 100vh !important;
+    }
+
+    .bigAssignedToContainer {
+        width: 76%;
+    }
+
+    .bigAssignedToContainerPopUp {
+        width: 75%;
+        transform: translateX(0%);
+    }
+
+    .subtaskPlusPopUp {
+        left: 93%;
+    }
+}
+
+@media(max-width:755px) {
+    .allTasks span {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width:660px) {
+   
+
+    .animationBackground{
+        background-color: #2A3647;
+    }
+
+    .joinLogoLogInLP{
+        display: none;
+    }
+
+    .joinLogoLogInLPResponsive{
+        display: flex;
+        animation-name: logoResponsive;
+    }
+
+
+    .allTasks span {
+        font-size: 21px !important;
+    }
+
+  
+
+
+
+    
+
+
+}
+
+@media(max-width:500px) {
+  
+    .addTaskContainer {
+        background-color: #F5F5F5;
+        margin-top: 4px;
+    }
+
+    .bigAssignedToContainerPopUp {
+        width: 90%;
+    }
+
+    .taskBtns {
+        display: none;
+    }
+
+    .responsiveHeaderPopUp {
+        display: flex;
+    }
+
+   
+
+    .categoryContainerS {
+        width: 86% !important;
+    }
+
+    .bigAssignedToContainer {
+        width: 90%;
+    }
+
+    .subtaskContainer {
+        width: 98%;
+    }
+}
+
+@media(max-width:1055px) {  /*adjusting all headlines*/
+    .LogInHeadline {
+        font-size: 47px;
+    }
+
+    .headlineFP {
+        font-size: 47px;
+    }
+
+    .headLineContacts {
+        font-size: 47px;
+        align-items: flex-start;
+    }
+
+    .headLine {
+        font-size: 47px;
+    }
+
+    .headLine h1 {
+        font-size: 47px;
+    }
+
+    .headlineT {
+        font-size: 47px;
+    }
+    
+    .headlineB {
+        font-size: 47px;
+    }
+}
+
+@media(max-width:870px) { /*adjusting all headlines*/
+    .LogInHeadline {
+        font-size: 44px;
+    }
+
+    .headlineFP {
+        font-size: 44px;
+    }
+
+    .headLine {
+        font-size: 44px;
+    }
+
+    .headLine h1 {
+        font-size: 44px;
+    }
+
+    .headlineT {
+        font-size: 44px;
+        
+    }
+
+    .headlineB {
+        font-size: 44px;
+    }
+}
+
+@media(max-width:800px) { /*adjusting all headlines*/
+
+    .subtaskPlusOriginal {
+        left: 94% ;
+    }
+
+    .LogInHeadline {
+        font-size: 47px;
+    }
+
+    .headlineFP {
+        font-size: 47px;
+    }
+
+    .headLine {
+        font-size: 47px;
+    }
+
+    .headLine h1 {
+        font-size: 47px;
+    }
+
+    .headlineT {
+        font-size: 47px;
+        
+        
+    }
+
+    .headlineB {
+        font-size: 47px;
+    }
+}
+
+@media(max-width:340px) { /*adjusting all headlines*/
+    .LogInHeadline {
+        font-size: 42px;
+    }
+
+    .headlineFP {
+        font-size: 42px;
+    }
+
+    .headLine {
+        font-size: 42px;
+    }
+
+    .headLine h1 {
+        font-size: 42px;
+    }
+
+    .headlineT {
+        font-size: 42px;
+    }
+
+    .headlineB {
+        font-size: 42px;
+    }
+}
+
+/* responsiveness navbar */
+
+@media (max-width:800px){
+    .navbarJoinLogo {
+        display: none;
+    }
+
+    .adjustImgNav {
+        margin-left: 0;
+    }
+
+    .legalNotice {
+        display: none;
+    }
+
+    .navbarSidebar {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        height: 74px;
+    }
+
+    .navLine .navImg {
+        margin-left: 0;
+    }
+
+    .grayLine {
+        display: none;
+    }
+}

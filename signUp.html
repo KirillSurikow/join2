@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="mini_backend.js"></script>
+    <script src="js/addTask.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/signUp.js"></script>
+    <script src="js/login.js"></script>
+    <title>Sign Up</title>
+</head>
+
+<body onload="backendSignUp()">
+    <div class="headerSignUp">
+        <img class="joinLogoLogIn" src="assets/img/LogIn/logo.png" alt="">
+    </div>
+    <div class="signUp">
+        <div class="headerSignUp">
+            <img onclick="backToLogIn()" class="backArrow" src="assets\img\Sign Up\arrow.png">
+        </div>
+        <h1 class="headlineSU">Sign Up</h1>
+        <div class="underline"></div>
+
+        <div class="inputFields">
+            
+                <div class="inputContainer">
+                    <input class="inputField" id="signUpName" type="text" placeholder="Firstname Lastname" required>
+                    <img class="inputImageName" src="assets/img/Sign Up/person.png">
+                    <span class="redText" id="signUpNeededName"></span>
+                </div>
+
+                <div class="inputContainer">
+                    <input class="inputField" id="signUpEmail" type="email" placeholder="Email" required>
+                    <img class="inputImageMail" src="assets/img/LogIn/mail.png">
+                    <span class="redText" id="signUpNeededMail"></span>
+                </div>
+
+                <div class="inputContainer">
+                    <input class="inputField" id="signUpPassword" type="password" placeholder="Password" required>
+                    <img class="inputImageLock" src="assets/img/LogIn/lock.png">
+                    <span class="redText" id="signUpNeededPw"></span>
+                </div>
+
+        </div>
+
+        <div class="logInButtons">
+            <button onclick="confirmSignUp()" class="grayHighlight loginBtn">Sign Up</button>
+        </div>
+        
+    </div>
+
+</body>
+</html>

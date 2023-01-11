@@ -1,0 +1,108 @@
+/* Help */
+body {
+    overflow: hidden;
+}
+
+.bigContainerHelp {
+    display: flex;
+    height: 100vh;
+}
+
+.mainContainerHelp {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.helpMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+}
+
+.helpHeadline {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.helpHeadline span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 120%;
+}
+
+
+.helpInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+}
+
+.whatIsJoin {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 120%;
+}
+
+.howToUse {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 120%;
+}
+
+.howToUseMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+}
+
+.helpStepOne {
+    display: flex;
+    gap: 15px;
+}
+
+.helpNumberOne {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 120%;
+}
+
+.helpStepTwo {
+    display: flex;
+    gap: 15px;
+}
+
+.helpNumberTwo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 120%;
+}
+
+
+.helpStepThree {
+    display: flex;
+    gap: 15px;
+}
+
+.helpNumberThree {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 120%;
+}
