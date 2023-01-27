@@ -1,8 +1,8 @@
 async function downloadSummary() {
-    setURL('https://kirill-surikow.developerakademie.net/smallest_backend_ever');
+    setURL('https://kirill-surikow.de/smallest_backend_ever');
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
-    prepareSummary()
+    prepareSummary();
     let currentUserAsString = backend.getItem('user');
     currentUser = JSON.parse(currentUserAsString) || [];
     comingFromLogIn = JSON.parse(backend.getItem('comingFromLogIn')) || [];
@@ -11,7 +11,7 @@ async function downloadSummary() {
 
 
 let allTasks;
-let comingFromLogIn;
+
 
 function prepareSummary() {
     let tasksTotal = countTasks();
@@ -40,27 +40,19 @@ function renderGreet(currentUser, comingFromLogIn) {
     renderGreetMobile(comingFromLogIn)
     let today = new Date();
     let currHour = today.getHours();
+    let user = currentUser;
     if (currHour < 12) {
-        document.getElementById('greet').innerHTML = /*html*/`
-        <span class ="greetTime">Good Morning,</span>
-        `
+        document.getElementById('greetTime').innerHTML = 'Good Morning,';
     } else if (currHour < 18) {
-        document.getElementById('greet').innerHTML = /*html*/`
-        <span class ="greetTime">Good Afternoon,</span>
-        `
+        document.getElementById('greetTime').innerHTML = 'Good Afternoon,';
     } else {
-        document.getElementById('greet').innerHTML = /*html*/`
-        <span class ="greetTime">Good Evening,</span>
-        `
-    } if (currentUser <= 0) {
-        document.getElementById('greet').innerHTML += /*html*/ `<span class="greetName">Guest</span>`;
+        document.getElementById('greetTime').innerHTML = 'Good Evening,';
+    } if (currentUser == 'Guest') {
+        document.getElementById('greetName').innerHTML = 'Guest';
+    } else {
+        document.getElementById('greetName').innerHTML = user;
     }
 
-    for (let i = 0; i < currentUser.length; i++) {
-        let user = currentUser[i]['name'];
-        document.getElementById('greet').innerHTML += /*html*/ `<span class="greetName">${user}</span>`;
-
-    }
 }
 
 
@@ -68,30 +60,22 @@ async function renderGreetMobile(comingFromLogIn) {
     if (innerWidth < 900 && comingFromLogIn == true) {
         let today = new Date();
         let currHour = today.getHours();
+        let user = currentUser;
         if (currHour < 12) {
             removeAndAddClass();
-            document.getElementById('mobileGreet').innerHTML = /*html*/`
-            <span class ="greetTime">Good Morning,</span>
-            `
+            document.getElementById('greetTimeMobile').innerHTML = 'Good Morning,';
         } else if (currHour < 18) {
-            removeAndAddClass()
-            document.getElementById('mobileGreet').innerHTML = /*html*/`
-            <span class ="greetTime">Good Afternoon,</span>
-            `
+            removeAndAddClass();
+            document.getElementById('greetTimeMobile').innerHTML = 'Good Afternoon,';
         } else {
-            removeAndAddClass()
-            document.getElementById('mobileGreet').innerHTML = /*html*/`
-            <span class ="greetTime">Good Evening,</span>
-            `
-        } if (currentUser <= 0) {
-            document.getElementById('mobileGreet').innerHTML += /*html*/ `<span class="greetName">Guest</span>`;
+            removeAndAddClass();
+            document.getElementById('greetTimeMobile').innerHTML = 'Good Evening,';
+        } if (currentUser == 'Guest') {
+            document.getElementById('greetNameMobile').innerHTML = 'Guest';
+        }else {
+            document.getElementById('greetNameMobile').innerHTML = user;
         }
-
-        for (let i = 0; i < currentUser.length; i++) {
-            let user = currentUser[i]['name'];
-            document.getElementById('mobileGreet').innerHTML += /*html*/ `<span class="greetName">${user}</span>`;
-
-        }
+        
         setTimeout(() => {
             document.getElementById('mobileGreet').classList.remove('mobileGreet');
             document.getElementById('mobileGreet').classList.add('d-none');

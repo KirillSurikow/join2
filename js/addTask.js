@@ -3,11 +3,12 @@
  * 
  */
 async function initServer() {
-    setURL('https://kirill-surikow.developerakademie.net/smallest_backend_ever');
+    setURL('https://kirill-surikow.de/smallest_backend_ever');
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
     allContactsSorted = JSON.parse(backend.getItem('allContactsSorted')) || [];
     allContactsUnsorted = JSON.parse(backend.getItem('allContactsUnsorted')) || [];
+    prepareContacts()
 }
 
 let allTasks = [];
@@ -21,6 +22,11 @@ let subtaskCounter = 0;
 function requestNewTask() {
     resetAlert();
     initValidation();
+}
+
+function prepareContacts(){
+    insertAssignYou();
+    loadAllContacts();
 }
 
 /**

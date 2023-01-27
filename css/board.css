@@ -7,7 +7,7 @@
 
 .contentBoard {
     width: 100%;
-    height: calc(100vh - 55px - 84px);
+    height: calc(100vh - 80px - 84px);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -22,6 +22,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.responsiveSubHeadline{
+    display: none;
 }
 
 .normalHeadArea h1{
@@ -43,6 +47,8 @@
     align-items: flex-start;
     padding-top: 15px;
     gap: 15px;
+    padding-left: 30px;
+    overflow-y: auto;
 }
 
 .allTasks {
@@ -93,6 +99,7 @@
     padding-bottom: 8px;
     width: 194px;
     gap: 5px;
+    border: none;
 }
 
 
@@ -112,7 +119,7 @@
     padding-bottom: 3px;
     font-size: 16px;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     height: 37px;
     margin-top: 12px;
@@ -307,24 +314,26 @@
 
 
 .boardPopUpTitel {
-    max-height: 140px;
+    height: 75px;
     word-break: break-word;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 61px;
     line-height: 120%;
+    min-height: 75px;
 }
 
 
 .boardPopUpDescrition {
-    max-height: 140px;
+    height: 100px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
     line-height: 120%;
     word-break: break-word;
+    min-height: 100px;
 }
 
 
@@ -852,8 +861,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
     gap: 10px;
+    max-height: 800px;
 }
 
 
@@ -886,6 +895,27 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+   
+}
+
+.deleteBtn{
+    background: #2A3647;
+    border-radius: 10px;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    position: absolute;
+    top: 90%;
+    right: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .submitEditBtn:hover {
@@ -893,13 +923,12 @@
 }
 
 
-.popUpContentPencil {
-    position: absolute;
-    top: 90%;
-    left: 84%;
-    width: 40px;
+.pencilContainer{
+    width: 89%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
-
 
 .popUpContentPencil {
     cursor: pointer;
@@ -910,9 +939,8 @@
     display: none;
     width: 21.65px;
     height: 21.65px;
-    position: relative;
-    left: 85%;
-    top: 5px;
+    align-self: flex-end;
+    margin-right: 10%;
 }
 
 
@@ -1050,7 +1078,7 @@
     padding: 8px;
     width: 100%;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
@@ -1059,7 +1087,7 @@
 .textareaField {
     padding: 8px;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     width: 100%;
     font-family: 'Inter', sans-serif;
@@ -1083,7 +1111,7 @@
     box-sizing: border-box;
     border: 1px solid #D1D1D1;
     border-radius: 6px;
-    color: #D1D1D1;
+    color: black;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1172,8 +1200,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 6px;
-    left: 88%;
+    top: 5px;
+    right: 5px;
 }
 
 .crossNewCategory {
@@ -1250,6 +1278,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
  }
 
  /* before dropdown */
@@ -1271,6 +1300,7 @@
     border-left: 1px solid #D1D1D1;
     border-right: 1px solid #D1D1D1;
     padding: 8px;
+    box-sizing: border-box ;
 }
 
 .selectOptionC:hover {
@@ -1307,6 +1337,7 @@
     height: 43px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .assignedContacts{
@@ -1464,7 +1495,7 @@
 
 .subtasks {
     padding: 8px;
-    color: #D1D1D1;
+    color: black;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
@@ -1540,6 +1571,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     width: 160px;
+    cursor: pointer;
+    border: none;
 }
 
 .grayHighlight {
@@ -1560,7 +1593,6 @@
 .responsiveLogoPopUp{
     height: 42px;
     margin-left: 6%;
-    margin-top: 2%;
 }
 
 .taskBtnsResponsive {
@@ -1643,3 +1675,9 @@
     display: none;
 }
 
+
+.test{
+    height: 200px;
+    width: 90%;
+    background-color: blue;
+}

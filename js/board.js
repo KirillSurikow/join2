@@ -3,7 +3,7 @@
  * 
  */
 async function downloadTasks() {
-  setURL('https://kirill-surikow.developerakademie.net/smallest_backend_ever');
+  setURL('https://kirill-surikow.de/smallest_backend_ever');
   await downloadFromServer();
   let allTasksAsString = backend.getItem('allTasks');
   allTasks = JSON.parse(allTasksAsString) || [];
@@ -205,6 +205,7 @@ function taskPopUpFromBoard() {
   popUpContainer.style.display = 'flex'
   let popUpContent = document.getElementById('popUpContent');
   popUpContent.innerHTML = returnPopUpContentOriginalHTML();
+  prepareContacts();
 }
 
 /**
@@ -332,10 +333,9 @@ function prepareSearch(searchLetters) {
     let title = allTasks[i]['title'];
     let description = allTasks[i]['description'];
     let category = allTasks[i]['category'];
-    let assignedTo = allTasks[i]['assignedTo'];
     let dueDate = allTasks[i]['dueDate'];
     let prio = allTasks[i]['prio'];
-    startSearch(i, searchLetters, title, description, category, assignedTo, dueDate, prio);
+    startSearch(i, searchLetters, title, description, category, dueDate, prio);
   }
 }
 
@@ -351,11 +351,10 @@ function prepareSearch(searchLetters) {
  * @param {string} dueDate 
  * @param {string} prio 
  */
-function startSearch(i, searchLetters, title, description, category, assignedTo, dueDate, prio) {
+function startSearch(i, searchLetters, title, description, category, dueDate, prio) {
   if (title.toLowerCase().includes(searchLetters)
     || description.toLowerCase().includes(searchLetters)
     || category.toLowerCase().includes(searchLetters)
-    || assignedTo.toLowerCase().includes(searchLetters)
     || dueDate.toLowerCase().includes(searchLetters)
     || prio.toLowerCase().includes(searchLetters)
   ) {
@@ -547,6 +546,13 @@ function unSelectAllReworkedPrios(i, allPrioSelected) {
   allPrioSelected[i].style.display = "none"
 }
 
+
+async function deleteTicket(i){
+  allTasks.splice(i ,1);
+  await backendIntegration();
+  closePopUp('popUpEditContainer');
+  divideByStatus();
+}
 
 
 

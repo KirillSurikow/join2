@@ -3,7 +3,7 @@
  * 
  */
 async function initServer() {
-    setURL('https://kirill-surikow.developerakademie.net/smallest_backend_ever');
+    setURL('https://kirill-surikow.de/smallest_backend_ever');
     await downloadFromServer();
     allContactsSorted = JSON.parse(backend.getItem('allContactsSorted')) || [];
     allContactsUnsorted = JSON.parse(backend.getItem('allContactsUnsorted')) || [];
@@ -187,11 +187,24 @@ async function requestNewContact() {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let phone = document.getElementById('phone').value;
-    let initials = createInitials(name)
-    if(name.trim().split(/\s+/).length <2 ){
+    validateContact(name, email, phone);
+}
+
+function validateContact(name, email, phone){
+    if(name == ""){
         document.getElementById('incorrectName').style.display='flex'
+    }
+    if(name.trim().split(/\s+/).length <2){
+        document.getElementById('incorrectName').style.display='flex'
+    }
+    if(email == ""){
+        document.getElementById('incorrectEmail').style.display='flex'
+    }
+    if(phone == ""){
+        document.getElementById('incorrectNumber').style.display='flex'
     }else{
-        addContact(name,email,phone,initials)
+        let initials = createInitials(name);
+        addContact(name,email,phone,initials);
     }
 }
 

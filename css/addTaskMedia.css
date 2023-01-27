@@ -21,7 +21,7 @@
     }
 
     .addTaskContainer{
-        height: calc(100vh - 55px - 88px) !important;
+        height: calc(100vh - 80px - 88px) !important;
         width: 100vw !important;
     }
 
@@ -220,28 +220,8 @@
   }
 }
 
-/* @media (max-width:1033px) {  
-    .prio {
-        padding: 8px;
-        min-width: 68px
+@media (max-width:590px){
+    .prioDoubleContainerOriginal span{
+        display: none;
     }
-
-    .prioSelected {
-        padding: 8px;
-        min-width: 68px
-    }
-} */
-
-/* @media (max-width:1080px) {
-    .taskBtns {
-        flex-direction: column;
-        width: 169px;
-    }
-
-    .clearBtn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5px;
-    }
-} */
+}

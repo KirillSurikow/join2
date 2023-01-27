@@ -82,7 +82,6 @@ function returnNormalInputInnerHTML() {
 function returnCategorySelectInnerHTML(nameOfCategory) {
     return /*html*/ `
         <div onclick="dropdown()" class="selectHeadField">
-            <input required class="hiddenInput" type="text" value="${nameOfCategory}">
             <span id="choiceContainer">${nameOfCategory}</span>
             <div class="colorChoice" id="colorChoice" style=""></div>
             <img class="dropdownImg" src="assets/img/Add Task/dropdown.png">
@@ -116,11 +115,26 @@ function returnCategorySelectInnerHTML(nameOfCategory) {
 function returnContactMenuHTML(i, contactsName) {
     return /*html*/`
         <div onclick="assignTo(${i})" class="contactToAssignContainer">
-           <span lass="contactToAssignName">${contactsName}</span> 
+           <span class="contactToAssignName">${contactsName}</span> 
            <div class="checkBoxesC1">
                <img class="checkBoxC d-none" src="assets/img/Add Task/checked.png" id="assigned${i}">
                 <img class="checkBoxC" src="assets/img/Add Task/unchecked.png" id="notAssigned${i}">
            </div>
+        </div>
+    `
+}
+
+function returnAssignYouHTML(){
+    return /*html*/ `
+        <div onclick="assignYou('You')" class="contactToAssignContainer">
+            <span class="contactToAssignName">
+                 You
+             </span>
+            <div class="checkBoxesC1">
+                 <img class="checkBoxC d-none" src="assets/img/Add Task/checked.png"
+                    id="assignedYou">
+                <img class="checkBoxC" src="assets/img/Add Task/unchecked.png" id="notAssignedYou">
+            </div>
         </div>
     `
 }

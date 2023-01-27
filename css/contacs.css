@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:calc(100vh - 55px);
+    height:calc(100vh - 80px);
     overflow-x: hidden;
 }
 
@@ -324,7 +324,7 @@
 .inputEditContainer1 {
     position: relative;
     width: 80%;
-    margin-top: 62px;
+    margin-top: 15px;
 }
 
 .imgEditContact {
@@ -346,10 +346,11 @@
 .inputfieldEditContact {
     padding: 8px;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     width: 100%;
     font-family: 'Inter', sans-serif;
+    outline: none;
 }
 
 
@@ -845,7 +846,7 @@
     padding: 8px;
     width: 100%;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
@@ -854,7 +855,7 @@
 .textareaField {
     padding: 8px;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     width: 100%;
     font-family: 'Inter', sans-serif;
@@ -878,7 +879,7 @@
     box-sizing: border-box;
     border: 1px solid #D1D1D1;
     border-radius: 6px;
-    color: #D1D1D1;
+    color: black;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -967,8 +968,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 6px;
-    left: 88%;
+    top: 5px;
+    right: 5px;
 }
 
 .crossNewCategory {
@@ -1045,6 +1046,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
  }
 
  /* before dropdown */
@@ -1258,7 +1260,7 @@
 
 .subtasks {
     padding: 8px;
-    color: #D1D1D1;
+    color: black;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
@@ -1334,6 +1336,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     width: 160px;
+    cursor: pointer;
 }
 
 .grayHighlight {

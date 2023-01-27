@@ -151,7 +151,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: space-evenly;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 80px);
 }
 
 .summaryBoard {

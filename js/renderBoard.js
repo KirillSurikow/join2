@@ -19,7 +19,7 @@ function returnTaskContainerHTML(j, title, description, category, prio, category
     </div>  `
 }
 
-function returnTaskContainerForSearchHTML(i, title, description, category, assignedTo, prio, categoryColor) {
+function returnTaskContainerForSearchHTML(i, title, description, category, prio, categoryColor) {
     return  /*html*/`
     <div onclick="showDetails(${i})"  id="${i}" draggable="true" class="task" ondragstart="startDragging(${i})">
        <div class="category" style="background-color:${categoryColor};">${category}</div>
@@ -27,7 +27,7 @@ function returnTaskContainerForSearchHTML(i, title, description, category, assig
        <div class="description">${description}</div>
        <div class="assignedAndPrio">
            <div id="assignedToContainer${i}" class="assignedToContainer">
-               <div>${assignedTo}</div>
+               
            </div>
            <img class="prioBoard" src="assets/img/Add Task/${prio}.png">
        </div>
@@ -105,6 +105,10 @@ function returnPopUpEditContentHTML(title, description, dueDate, i) {
     <div class="boardPopUpEditAssignedTo">Assigned to: </div>
     <div class="assignedToEditContainer" id="assignedToEditContainer${i}">
 
+    </div>
+    <div onclick="deleteTicket(${i})"  class="deleteBtn">
+        Delete
+        <img class="insidePopUpPencil" src="assets/img/Board/bin.png" alt="">
     </div>
     <div onclick="initEdit(${i})"  class="submitEditBtn">
         OK
@@ -310,16 +314,6 @@ function returnPopUpContentBoardHTML(id) {
                             </div>
                         </div>
                         <div class="selectFields d-none adjustWidth" id="selectFieldsAT">
-                            <div onclick="assignYou('You')" class="selectOptionC adjustWidth2">
-                                <span class="personToAssign">
-                                    You
-                                </span>
-                                <div class="checkBoxesC">
-                                    <img class="checkBoxC d-none" src="assets/img/Add Task/checked.png"
-                                        id="assignedYou">
-                                    <img class="checkBoxC" src="assets/img/Add Task/unchecked.png" id="notAssignedYou">
-                                </div>
-                            </div>
                             <div class="allContactsToAssign adjustWidth2" id="allContactsToAssign"></div>
                             <div class="selectOptionC adjustWidth2" onclick="activateSearchContact()">
                                 <span>Invite New Contact</span>
@@ -516,16 +510,6 @@ function returnPopUpContentOriginalHTML() {
                             </div>
                         </div>
                         <div class="selectFields d-none adjustWidth" id="selectFieldsAT">
-                            <div onclick="assignYou('You')" class="selectOptionC adjustWidth2">
-                                <span class="personToAssign">
-                                    You
-                                </span>
-                                <div class="checkBoxesC">
-                                    <img class="checkBoxC d-none" src="assets/img/Add Task/checked.png"
-                                        id="assignedYou">
-                                    <img class="checkBoxC" src="assets/img/Add Task/unchecked.png" id="notAssignedYou">
-                                </div>
-                            </div>
                             <div class="allContactsToAssign adjustWidth2" id="allContactsToAssign"></div>
                             <div class="selectOptionC adjustWidth2" onclick="activateSearchContact()">
                                 <span>Invite New Contact</span>
@@ -656,7 +640,8 @@ function returnDetailedInterfaceHTML(category, categoryColor, title, description
         <img class="responsiveLogoPopUp" src="assets/img/LogIn/responsiveLogo.png">
     </div>
     <div class ="boardPopUp">
-        <img class="popUpEditContentArrow" onclick="closePopUp('popUpEditContainer')" src="assets/img/Board/arrowLeft.png">
+        <div class="test"></div>
+        <!-- <img class="popUpEditContentArrow" onclick="closePopUp('popUpEditContainer')" src="assets/img/Board/arrowLeft.png">
         <img class="popUpEditContentCross1" onclick="closePopUp('popUpEditContainer')"src="assets/img/Add Task/cross.png">
         <div class="boardPopUpCategory" style="background-color:${categoryColor}">
             <div class="boardPopUpCategoryText">
@@ -695,10 +680,10 @@ function returnDetailedInterfaceHTML(category, categoryColor, title, description
         <div class="boardPopUpAssignedToContainer" id="assignedToDetailed${i}">
             
         </div>
-        <div>
+        <div class="pencilContainer">
            <img class="popUpContentPencil" onclick="editDetails('${i}')" src="assets/img/Board/pen.png">
         </div>
-      
+    </div>   -->
 </div>
 `
 }

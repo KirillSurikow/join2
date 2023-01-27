@@ -139,7 +139,8 @@ function taskPopUp(id) {
     document.body.style.overflowY = 'hidden';
     popUpContainer.style.display = 'flex'
     let popUpContent = document.getElementById('popUpContent');
-    popUpContent.innerHTML = returnPopUpContentBoardHTML(id)
+    popUpContent.innerHTML = returnPopUpContentBoardHTML(id);
+    prepareContacts();
   }
 
   /**
@@ -230,10 +231,10 @@ function renderAccordingToStatus(i) {
     let title = allTasks[i]['title'];
     let description = allTasks[i]['description']
     let category = allTasks[i]['category'];
-    let assignedTo = allTasks[i]['assignedTo'];
     let prio = allTasks[i]['prio'];
     let categoryColor = allTasks[i]['categoryColor'];
-    statusContainer.innerHTML += returnTaskContainerForSearchHTML(i, title, description, category, assignedTo, prio, categoryColor);
+    statusContainer.innerHTML += returnTaskContainerForSearchHTML(i, title, description, category,  prio, categoryColor);
+    loadAssignedPersons(i); 
   }
 
   /**

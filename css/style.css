@@ -122,6 +122,8 @@ body {
     bottom: 0;
     margin: auto;
     height: 55%;
+    max-width: 750px;
+    max-height: 500px;
     padding: 10px;
     background-color: white;
     width: 50vw;
@@ -178,6 +180,7 @@ h1 {
     padding-top: 6px;
     padding-bottom: 6px;
     cursor: pointer;
+    border: none;
 }
 
 
@@ -231,6 +234,7 @@ h1 {
     padding-top: 6px;
     padding-bottom: 6px;
     cursor: pointer;
+    border: none;
 }
 
 
@@ -273,7 +277,7 @@ h1 {
 
 .inputImageName {
     position: absolute;
-    left: 78%;
+    left: 81%;
     top: 22%;
     height: 18px;
     width: auto;
@@ -286,7 +290,7 @@ h1 {
 
 .inputImageLock {
     position: absolute;
-    left: 78%;
+    left: 81%;
     top: 22%;
     height: 18px;
     width: auto;
@@ -295,7 +299,7 @@ h1 {
 
 .inputImageMail {
     position: absolute;
-    left: 78%;
+    left: 81%;
     top: 22%;
     height: auto;
     width: 16px;
@@ -324,6 +328,8 @@ h1 {
     bottom: 0;
     margin: auto;
     height: 45%;
+    max-width: 750px;
+    max-height: 550px;
     background-color: white;
     width: 50vw;
     border-radius: 30px;
@@ -338,10 +344,13 @@ h1 {
     padding: 8px;
     width: 71%;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+    outline: none;
+
+
 }
 
 .headerSignUp {
@@ -367,7 +376,7 @@ h1 {
 .inputFieldFP {
     padding: 8px;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     width: 53%;
 }
@@ -482,10 +491,11 @@ h1 {
     padding: 8px;
     width: 71%;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+    outline: none;
 }
 
 .grayHighlight {
@@ -553,18 +563,18 @@ h1 {
 
 
 .selectHeadField {
-    transform: translateX(-2%);
     position: relative;
     background-color: white;
     padding: 8px;
     border: 1px solid #D1D1D1;
     border-radius: 6px;
-    color: #D1D1D1;
+    color: black;
     display: flex;
     align-items: center;
     gap: 8px;
-    width: 99%;
+    width: 100%;
     min-height: 15px;
+    box-sizing: border-box;
 }
 
 .selectHeadFieldContacts {
@@ -573,7 +583,7 @@ h1 {
     padding: 8px;
     border: 1px solid #D1D1D1;
     border-radius: 6px;
-    color: #D1D1D1;
+    color: black;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -589,7 +599,7 @@ h1 {
     padding: 8px;
     border: 1px solid #D1D1D1;
     border-radius: 6px;
-    color: #D1D1D1;
+    color: black;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -602,6 +612,7 @@ h1 {
     height: 0;
     width: 0;
     opacity: 0;
+    display: none;
 }
 
 .dropdownImgPopUp {
@@ -690,7 +701,7 @@ h1 {
 
 .subtasksContact{
     padding: 8px;
-    color: #D1D1D1;
+    color: black;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
@@ -702,6 +713,7 @@ h1 {
     max-height: 75px;
     width: 52%;
     margin-left: 15px;
+    min-height: 75px;
 }
 
 .subtasksSD{
@@ -750,7 +762,7 @@ h1 {
 
 .subtasksInputBoard {
     padding: 8px;
-    color: #D1D1D1;
+    color: black;
     border: 1px solid rgb(209, 209, 209);
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
@@ -918,15 +930,7 @@ h1 {
 
 /* Board oder AddTask ??????   Auf den erstn blick passiert beim entfernen nichts im board ?!?!??! //////////////////////////////*/
 
-.boardPopUp {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 15px;
-    gap: 15px;
-}
+
 
 
 
@@ -951,7 +955,7 @@ h1 {
     padding-bottom: 3px;
     font-size: 16px;
     border: 1px solid #D1D1D1;
-    color: #D1D1D1;
+    color: black;
     border-radius: 5px;
     height: 37px;
     margin-top: 12px;
@@ -1070,9 +1074,9 @@ h1 {
     width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
     background-color: white;
-    transform: translateX(-1.5%);
     padding: 10px;
     display: none;
+    height: 50px;
 }
 
 
@@ -1291,7 +1295,7 @@ h1 {
  }
 
 .adjustWidth2{
-    width: 95%;
+    width: 100%;
 }
 
 .checkBoxesC1{
@@ -1574,26 +1578,6 @@ x
 }
 
 
-.popUpEditContent {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    height: 90%;
-    width: 40%;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    gap: 10px;
-}
-
-
 .subtaskContainerPopUp {
     width: 80%;
     max-height: 73px;
@@ -1604,6 +1588,7 @@ x
     gap: 10px;
     max-height: 75px;
     width: 76%;
+    min-height: 75px;
 }
 
 .assignedContact{
@@ -1834,9 +1819,7 @@ x
 .navLine {
     width: 15vw;
     padding-top: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 100vh;
+    height: 100%;
     background-color: #2A3647;
     display: flex;
     align-items: center;

@@ -16,7 +16,7 @@
     }
 
     .summaryContent {
-        height: calc(100vh - 55px - 84px);
+        height: calc(100vh - 80px - 84px);
     }
 
     .navbarSidebar {
@@ -70,7 +70,7 @@
 @media(max-width:415px) {
 
     .summaryContent {
-        height: calc(100vh - 55px - 76px);
+        height: calc(100vh - 80px - 76px);
     }
 }
 

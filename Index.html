@@ -12,6 +12,7 @@
     <script src="js/script.js"></script>
     <script src="js/login.js"></script>
     <script src="js/signUp.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/LogIn/responsiveLogo.png">
     <title>LogIn</title>
 
 
@@ -23,7 +24,7 @@
 
     <img class="joinLogoLogIn" src="assets/img/LogIn/logo.png">
 
-    
+
 
     <div class="signUpContainer">
         <span>Not a Join user?</span>
@@ -36,18 +37,18 @@
         <div class="underline"></div>
 
         <div class="inputFields">
-            
-                <div class="inputContainer">
-                    <input class="inputFieldLogin" type="email" placeholder="Email" id="loginEmail">
-                    <img class="inputImageMail" src="assets/img/LogIn/mail.png">
-                    <span class="redText" id="logInNeededMail"></span>
-                </div>
 
-                <div class="inputContainer">
-                    <input class="inputFieldLogin" type="password" placeholder="Password" id="loginPassword">
-                    <img class="inputImageLock" src="assets/img/LogIn/lock.png">
-                    <span class="redText" id="logInNeededPw"></span>
-                </div>
+            <div class="inputContainer">
+                <input class="inputFieldLogin" type="email" placeholder="Email" id="loginEmail">
+                <img class="inputImageMail" src="assets/img/LogIn/mail.png">
+                <span class="redText" id="logInNeededMail"></span>
+            </div>
+
+            <div class="inputContainer">
+                <input class="inputFieldLogin" type="password" placeholder="Password" id="loginPassword">
+                <img class="inputImageLock" src="assets/img/LogIn/lock.png">
+                <span class="redText" id="logInNeededPw"></span>
+            </div>
 
         </div>
 
@@ -63,13 +64,13 @@
 
         <div class="logInButtons">
             <button onclick="confirmLogIn()" class="grayHighlight loginBtn">Log in</button>
-            <button onclick=" directToSummary()" class="guestBtn">Guest Log in </button>
+            <button onclick="guestLogIn()" class="guestBtn">Guest Log in </button>
         </div>
         </form>
 
         <div id="msgBox" class="d-none"></div>
     </div>
-    
+
     <div class="animationBackground" id="animationBackground">
         <img class="joinLogoLogInLP" src="assets/img/LogIn/logo.png">
         <img class="joinLogoLogInLPResponsive" src="assets/img/Summary/joinLogoSummary.png">

@@ -23,7 +23,7 @@
     }
 
     .allTasks{
-        height: calc(100vh - 84px - 55px - 150px);
+        height: calc(100vh - 84px - 80px - 150px);
     }
 
     .prio{
@@ -41,6 +41,10 @@
 
 
     .submitEditBtn {
+        top: 83%;
+    }
+
+    .deleteBtn {
         top: 83%;
     }
 
@@ -266,12 +270,13 @@
 
 
 
-@media(max-width: 1050px) {
+@media(max-width: 1200px) {
     .popUpEditContent {
         top: 0;
         left: 0;
+        bottom: unset;
         width: 100vw;
-        height: 90Vh;
+        height: calc(100vh - 84px);
     }
 
     .adjustImgNav {
@@ -399,7 +404,7 @@
 
         .popUpContent {
             width: 100% !important;
-            height: calc(100vh - 84px) !important;
+            height: calc(100vh - 71px) !important;
             top: 0;
             border-radius: 0 !important;
             background-color: #F5F5F5;
@@ -473,6 +478,11 @@
         .responsiveSubHeadline{
             display: flex !important;
         }
+
+        .popUp{
+            height: calc(100vh - 80px) !important;
+        }
+
     }
 
     @media(max-width:660px){
@@ -542,6 +552,58 @@
     @media(max-width:720px) {
         .allTasks span {
             font-size: 14px !important;
+        }
+    }
+
+    @media(max-width: 500px){
+        .submitEditBtn{
+           left: 77%;
+        }
+
+        .deleteBtn{
+            right: 25%;
+        }
+    }
+
+    @media(max-width: 420px){
+        .submitEditBtn{
+           left: 74%;
+        }
+
+        .deleteBtn{
+            right: 28%;
+        }
+    }
+
+    @media(max-width: 350px){
+        .submitEditBtn{
+           left: 71%;
+        }
+
+        .deleteBtn{
+            right: 31%;
+        }
+    }
+
+    @media(max-width: 320px){
+        .submitEditBtn{
+           left: 68%;
+        }
+
+        .deleteBtn{
+            right: 34%;
+        }
+    }
+
+    @media (max-width:590px){
+        .prioDoubleContainerRework span{
+            display: none;
+        }
+    }
+
+    @media (max-width:590px){
+        .prioDoubleContainerOriginal span{
+            display: none;
         }
     }
 

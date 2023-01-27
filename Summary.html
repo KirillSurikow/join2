@@ -16,6 +16,7 @@
     <script src="js/summary.js"></script>
     <script src="mini_backend.js"></script>
     <script src="js/login.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/LogIn/responsiveLogo.png">
     <title>Summary</title>
 
 
@@ -120,8 +121,14 @@
                             </div>
 
                         </div>
-                        <div id="greet" class="greet"></div>
-                        <div id="mobileGreet" class="d-none"></div>
+                        <div class="greet">
+                            <span id="greetTime" class ="greetTime"></span>
+                            <span id="greetName" class ="greetName"></span>
+                        </div>
+                        <div class="d-none">
+                            <span id="greetTimeMobile" class ="greetTime"></span>
+                            <span id="greetNameMobile" class ="greetName"></span>
+                        </div>
                     </div>
                 </div>
 
@@ -132,7 +139,7 @@
             <div id="navline" class="navLine">
                 <img class="navbarJoinLogo" src="assets/img/Summary/joinLogoSummary.png">
                 <div class="navs">
-                    <div onclick="openSection('summary.html')" id="nav1" class="navbarSidebar">
+                    <div onclick="openSection('Summary.html')" id="nav1" class="navbarSidebar">
                         <img class="navImg opacity" src="assets/img/Summary/summary.png">
                         <span> Summary</span>
                     </div>

@@ -168,7 +168,11 @@ function showChoice(choice) {
  function dropdownAT(){
     let dropdownContacts = document.getElementById('selectFieldsAT');
     dropdownContacts.classList.toggle('d-none');
-    loadAllContacts();
+}
+
+function insertAssignYou(){
+    let contactMenu = document.getElementById('allContactsToAssign'); 
+    contactMenu.innerHTML += returnAssignYouHTML();
 }
 
 /**

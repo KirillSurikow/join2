@@ -280,13 +280,15 @@ function returncreateNewContactContainerHTML() {
                <img class="imgEditContact1" src="assets/img/Contacts/nameContact.png">
                <div id="incorrectName" class="incorrectName" style="display:none">Type First and Second Name</div>
            </div>
-           <div class="inputEditContainer">
+           <div class="inputEditContainer1">
                <input class="inputfieldEditContact" type="email" name="" id="email" placeholder="Email" >
                <img class="imgEditContact" src="assets/img/Contacts/mailContact.png" alt="">
+               <div id="incorrectEmail" class="incorrectName" style="display:none">Type an email</div>
            </div>
-           <div class="inputEditContainer">
-               <input class="inputfieldEditContact" type="tel" name="" id="phone" placeholder="Phone" >
+           <div class="inputEditContainer1">
+               <input class="inputfieldEditContact" type="number" name="" id="phone" placeholder="Phone" >
                <img class="imgEditContact" src="assets/img/Contacts/phoneContact.png" alt="">
+               <div id="incorrectNumber" class="incorrectName" style="display:none">Type a phone number</div>
            </div>
            <div class="createAndCancelBtns">
                <div class="cancelNewContact" onclick="cancelCreateNewContact()" >

@@ -252,7 +252,6 @@
 @media(max-width:1200px) {
     .popUpEditContent {
         width: 100% !important;
-        height: 100vh !important;
         border-radius: 0 !important;
         background-color: #F5F5F5 !important;
     }
